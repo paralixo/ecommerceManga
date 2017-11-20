@@ -1,0 +1,26 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+header {
+    background : #48546c;
+    color: #fff; 
+    padding: 50px;
+}
+
+
+
+
+#main {
+    height: 900px;
+    width: 500px; 
+    background-color: #fff; 
+    margin: 0 auto;
+}
+
