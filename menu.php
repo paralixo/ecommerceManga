@@ -10,10 +10,19 @@
     <body>
         
         <header>
-              
+            
+            <img id="logo" src="images/renard.png" />
+            <nav>
+                <ul>
+                    <li>Acceuil</li>
+                    <li>Mangas</li>
+                    <li>Produits dérivés</li>
+                    <li>Contact</li>
+                    <li>Mon compte</li>
+                </ul>
+            </nav>
+            
         </header>
-
-
         
     </body>
 </html>
