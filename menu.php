@@ -4,7 +4,7 @@
         
         <title>Menu de la page</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         
     </head>
     <body>
@@ -14,11 +14,11 @@
             <img id="logo" src="images/renard.png" />
             <nav>
                 <ul>
-                    <li>Acceuil</li>
-                    <li>Mangas</li>
-                    <li>Produits dérivés</li>
-                    <li>Contact</li>
-                    <li>Mon compte</li>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#">Mangas</a></li>
+                    <li><a href="#">Produits dérivés</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Mon compte</a></li>
                 </ul>
             </nav>
             

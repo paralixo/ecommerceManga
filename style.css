@@ -5,23 +5,38 @@
     padding: 0;
 }
 
-
-
 /* HEADER */
 
 header { 
+    padding: 10px;
     background: #48546C;
-    display: flex;
+    height: 50px;
 }
 
 header #logo {
-    width: 75px;
+    height: 50px;
+    width: 50px;
+    float: left;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
+    justify-content: center;
 }
 
+header nav ul li {
+    padding-right: 15px;
+}
 
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+}
 
+header nav ul li a:hover {
+    text-decoration: underline;
+}
