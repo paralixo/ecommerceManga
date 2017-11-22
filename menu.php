@@ -16,8 +16,8 @@
                 <ul>
                     <li><a href="#">Produits Dérivés</a></li>
                     <li><a href="#">Mangas</a></li>
-                    <li><a href="#">Acceuil</a></li>
-                    <li><a href="#">Contacter</a></li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li><a href="#">Mon compte</a></li>
                 </ul>
             </nav>
