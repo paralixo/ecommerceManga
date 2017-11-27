@@ -4,14 +4,14 @@
         
         <title>Menu de la page</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="style.css">
-      	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand" rel="stylesheet"> 
+      	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../style/style.css"> 
     </head>
     <body>
         
         <header>
             
-            <img id="logo" src="images/renard.png" />
+            <img id="logo" src="../images/renard.png" />
             <nav>
                 <ul>
                     <li><a href="#">Produits Dérivés</a></li>
