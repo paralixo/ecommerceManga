@@ -1,6 +1,6 @@
 <!-- Footer -->
 
-<!-- lien avec la feuille de style -->
+<!-- lien avec les feuilles de styles -->
 <meta charset="utf-8"/>
 <link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../style/style.css"/>
@@ -8,7 +8,7 @@
 <!-- Block entier -->
 <footer id="pied_de_page">
 	<!-- Premier block "Qui sommes nous ?" -->
-	<div id="footer_block_1">
+	<div id="footer_block_left">
 		<h2>
 			En savoir plus
 		</h2>
@@ -19,13 +19,13 @@
 		</p>
 	</div>
 
-	<div id="footer_block_2">
+	<div id="footer_block_middle">
 		<p> 
 
 		</p>
 	</div>
 
-	<div id="footer_block_3">
+	<div id="footer_block_right">
 		<p>
 			
 		</p>
