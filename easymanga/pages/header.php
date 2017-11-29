@@ -19,11 +19,13 @@
             <li><a href="#">Mangas</a></li>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Mon compte</a></li>
+            <li><a href="#">Mon Compte</a></li>
         </ul>
     </nav>
 
-    <img src="../images/logo_caddie.png" alt="logo caddie" title="Votre panier" />
+
+    <img id="panier" src="../images/logo_caddie.png" alt="icon caddie" title="Mon panier" />
+
 
 </header>
 
