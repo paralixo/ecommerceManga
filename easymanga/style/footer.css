@@ -11,7 +11,7 @@ footer {
 footer h2 {
 	font-family: 'Quicksand', sans-serif;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 footer div {
@@ -49,4 +49,10 @@ hr {
     border: solid black 1px;
     border-radius: 3px;
     padding: 10px;
+}
+
+.bouttonSoutien:hover {
+    background-color: #777 ;
+    color: #fff;
+    border-color: #fff;
 }

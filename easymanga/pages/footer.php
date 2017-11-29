@@ -23,10 +23,10 @@
 	<div id="suivezNous">
 		<h2>Suivez-nous</h2>
         <div>
-            <a href="www.twitter.com"><img src="../images/originaux/logo_twitter_origin" alt="suivez-nous sur twitter" title="Twitter"></a>
-            <a href="www.facebook.com"><img src="../images/originaux/logo_facebook_origin" alt="suivez-nous sur facebook" title="Facebook"></a>
-            <a href="www.instagram.com"><img src="../images/originaux/logo_instagram_origin" alt="suivez-nous sur instagram" title="Instagram"></a>
-            <a href="www.pinterest.com"><img src="../images/originaux/logo_pinterest_origin" alt="suivez-nous sur pinterest" title="Pinterest"></a>
+            <a href="http://www.twitter.com"><img src="../images/originaux/logo_twitter_origin" alt="suivez-nous sur twitter" title="Twitter"></a>
+            <a href="http://www.facebook.com"><img src="../images/originaux/logo_facebook_origin" alt="suivez-nous sur facebook" title="Facebook"></a>
+            <a href="http://www.instagram.com"><img src="../images/originaux/logo_instagram_origin" alt="suivez-nous sur instagram" title="Instagram"></a>
+            <a href="http://www.pinterest.com"><img src="../images/originaux/logo_pinterest_origin" alt="suivez-nous sur pinterest" title="Pinterest"></a>
         </div>
 	</div>
 
