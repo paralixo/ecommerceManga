@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../style/style.css">
     </head>
     <body>
-        <?php include 'menu.php' ; ?>  
+        <?php include 'header.php' ; ?>
 
 
 

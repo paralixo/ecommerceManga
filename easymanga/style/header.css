@@ -2,14 +2,20 @@
 
 header {
     padding: 10px;
-    background: #48546C;
-    height: 50px;
+    background-color: #48546C;
+    height: 100px;
+    color: white;
 }
 
-header #logo {
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+header #logo{
     height: 50px;
     width: 50px;
-    float: left;
+    position: absolute;
 }
 
 header nav ul {
@@ -26,10 +32,11 @@ header nav ul li {
 
 header nav ul li a {
     font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 0.9em;
     line-height: 50px;
 }
 
