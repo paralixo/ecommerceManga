@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
     <head>
-        
-        <title>Menu de la page</title>
         <meta charset="utf-8" />
       	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../style/menu.css">
