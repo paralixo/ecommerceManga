@@ -23,5 +23,7 @@
         </ul>
     </nav>
 
+    <img src="../images/logo_caddie.png" alt="logo caddie" title="Votre panier" />
+
 </header>
 
