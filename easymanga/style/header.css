@@ -9,6 +9,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     text-align: center;
 }
