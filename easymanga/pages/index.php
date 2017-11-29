@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="../style/style.css">
     </head>
     <body>
-        <?php require("menu.php"); ?>  
-        
+        <?php include 'menu.php' ; ?>  
 
-        <?php require("footer.php"); ?>
+
+
+        <?php include 'footer.php' ; ?>
     </body>
 </html>
