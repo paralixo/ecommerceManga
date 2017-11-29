@@ -2,7 +2,7 @@
 
 <!-- liens -->
 <meta charset="utf-8" />
-<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu|Poiret+One|Quicksand" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../style/header.css">
 
 <!-- block du header -->
@@ -22,6 +22,8 @@
             <li><a href="#">Mon compte</a></li>
         </ul>
     </nav>
+
+    <img src="../images/logo_caddie.png" alt="logo caddie" title="Votre panier" />
 
 </header>
 

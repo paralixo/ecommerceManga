@@ -1,21 +1,25 @@
 /* HEADER */
 
 header {
-    padding: 10px;
+    padding: 5px;
     background-color: #48546C;
-    height: 100px;
+    height: 80px;
     color: white;
+    position: relative;
 }
 
 header h1 {
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     text-align: center;
 }
 
 header #logo{
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     position: absolute;
+    top: 5px;
+    left: 75px;
 }
 
 header nav ul {
