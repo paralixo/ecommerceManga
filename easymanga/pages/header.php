@@ -9,7 +9,7 @@
 <header>
 
     <!-- logo -->
-    <img id="logo" src="../images/renard.png" alt="logo" title="Logo easyManga"/>
+    <a href="#" alt="lien vers accueil depuis logo"><img id="logo" src="../images/renard.png" alt="logo easyManga" title="Notre magnifique logo"/></a>
     <!-- titre -->
     <h1>easyManga</h1>
     <!-- menu de naviguation -->
@@ -24,7 +24,7 @@
     </nav>
 
 
-    <img id="panier" src="../images/logo_caddie.png" alt="icon caddie" title="Mon panier" />
+    <a href="#" alt="lien vers mon panier"><img id="panier" src="../images/logo_caddie.png" alt="mon panier" title="Mon panier" /></a>
 
 
 </header>
