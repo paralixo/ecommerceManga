@@ -8,19 +8,7 @@
 <!-- Block entier -->
 <footer>
 	<!-- Premier block "Qui sommes nous ?" -->
-    <div id="enSavoirPlus">
-		<h2>En savoir plus</h2>
-		<p> 
-			Nous sommes deux étudiants qui ont pour projet de créer un site d'<strong>e-commerce</strong>.
-			Nous souhaitons partager notre <strong>passion du manga</strong> en développant ce marché en France.
-			Si vous voulez <strong>en savoir plus</strong> plus cliquez sur le bouton suivant:
-		</p>
-        <a href="#" alt="En savoir plus" title="En savoir plus" class="bouttonSoutien">En savoir plus</a>
-	</div>
-    
-    <hr>
-    
-	<div id="suivezNous">
+    	<div id="suivezNous">
 		<h2>Suivez-nous</h2>
         <div>
             <a href="http://www.twitter.com"><img src="../images/originaux/logo_twitter_origin" alt="suivez-nous sur twitter" title="Twitter"></a>
@@ -29,7 +17,17 @@
             <a href="http://www.pinterest.com"><img src="../images/originaux/logo_pinterest_origin" alt="suivez-nous sur pinterest" title="Pinterest"></a>
         </div>
 	</div>
+    
+    <hr>
 
+    <!-- Premier block "Qui sommes nous ?" -->
+	<div id="enSavoirPlus">
+		<h2>En savoir plus</h2>
+		<p> 
+			Nous sommes deux étudiants, qui voulons se faire de l'argent. Nous comptons sur cette chère population, cette belle bande de pigeons. Votre bonheur nous voulons, mais votre argent nous préferrons.
+		</p>
+        <a href="#" alt="En savoir plus" title="En savoir plus" class="bouttonSoutien">En savoir plus</a>
+	</div>
     <hr>
     
 	<div id="soutenezNous">
