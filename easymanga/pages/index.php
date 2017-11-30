@@ -11,7 +11,6 @@
         
         <div id="banniere">
             
-            <img src="../images/banniere.jpg" />
             
         </div>
         
