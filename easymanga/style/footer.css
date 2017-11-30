@@ -14,7 +14,7 @@ footer h2 {
     margin-bottom: 30px;
 }
 
-footer div {
+footer div:not(#reseauxSociaux) {
     width: 33%;
     padding: 20px;
     text-align: center;
@@ -24,12 +24,11 @@ footer #suivezNous div {
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 
 footer #suivezNous img {
     width: 50px;
-
+    margin: 5px;
 }
 
 footer div p {

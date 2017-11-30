@@ -8,8 +8,16 @@
     </head>
     <body>
         <?php include 'header.php' ; ?>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <div id="banniere">
+            
+            <img src="../images/banniere.jpg" />
+            
+        </div>
+        
+        <div id="defilement">
+        
+        </div>
 
         <?php include 'footer.php' ; ?>
 

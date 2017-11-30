@@ -13,3 +13,24 @@ body {
 strong {
     font-weight: normal;
 }
+
+/* BANNIERE */
+
+#banniere {
+    margin-bottom: 50px;   
+}
+
+#banniere img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* DEFILEMENT */ 
+
+#defilement {
+    background-color: crimson;
+    height: 300px;
+    margin-bottom: 50px;
+}
+

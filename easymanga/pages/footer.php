@@ -10,7 +10,7 @@
 	<!-- Premier block "Qui sommes nous ?" -->
     	<div id="suivezNous">
 		<h2>Suivez-nous</h2>
-        <div>
+        <div id="reseauxSociaux">
             <a href="http://www.twitter.com"><img src="../images/originaux/logo_twitter_origin" alt="suivez-nous sur twitter" title="Twitter"></a>
             <a href="http://www.facebook.com"><img src="../images/originaux/logo_facebook_origin" alt="suivez-nous sur facebook" title="Facebook"></a>
             <a href="http://www.instagram.com"><img src="../images/originaux/logo_instagram_origin" alt="suivez-nous sur instagram" title="Instagram"></a>
