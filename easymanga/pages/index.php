@@ -15,20 +15,9 @@
     <body>
         
         <?php include 'header.php' ; ?>
-        
-        <div id="fond_banniere">
-            <div id="banniere">
-                <div id="imgs-banniere">
-<!--
-                    <img ... />
-                    <img ... />
--->
-                </div>
-                <div id="msgs-banniere">
-                    
-                </div>
-            </div>
-        </div>
+
+        <br><hr><br>
+
 
         <?php include 'footer.php' ; ?>
 

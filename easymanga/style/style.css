@@ -8,7 +8,7 @@
 
 body {
     background-color: #F5F2F2;
-    color: #F5F2F2;
+/*    color: #F5F2F2;*/
 }
 
 strong {
@@ -17,11 +17,12 @@ strong {
 
 /* BANNIERE */
 
+
 #fond_banniere {
     height: 890px;
     background-color: #f5f2f2;
 }
-
+/*
 #banniere {
     position: relative;
     top: 80px;
@@ -45,3 +46,12 @@ strong {
     background-color: green;
     display: inline-block;
 }
+*/
+
+
+
+
+
+
+
+

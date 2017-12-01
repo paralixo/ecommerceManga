@@ -1,49 +1,38 @@
 /* HEADER */
 
 header {
-    padding: 5px;
     background-color: #48546C;
-    height: 80px;
     color: white;
     position: relative;
 }
 
 header h1 {
     font-family: 'Ubuntu', sans-serif;
-    color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-header #logo{
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: 5px;
-    left: 20px;
-}
-
-header nav {
-    width: 50%;
-    margin: 0% 26% 0% 24%;
+.separateur {
+    margin-left: 30px;
 }
 
 header nav ul {
-    display: flex;
     list-style: none;
-    justify-content: center;
-    margin: 0 auto;
+    text-align: center;
+    margin: 0;
 }
 
 header nav ul li {
-    padding-right: 20px;
-    padding-left: 20px;
+    margin: 0;
+    padding: 1px;;
 }
 
 header nav ul li a {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     font-weight: bold;
     font-size: 0.9em;
     line-height: 50px;
@@ -51,12 +40,17 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
+    color: #F5F2F2;
 }
 
-header #panier {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 50px;
-    width: 50px;
+/* Images */
+
+header .logo{
+    height: 80px;
+    width: 80px;
+}
+
+header .panier {
+    height: 60px;
+    width: 60px;
 }
