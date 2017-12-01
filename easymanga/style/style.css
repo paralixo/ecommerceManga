@@ -28,3 +28,20 @@ strong {
     height: 600px;
     background-color: burlywood;
 }
+
+#imgs-banniere {
+    position: relative;
+    top: 20%;
+    left: 5%;
+    height: 60%;
+    width: 35%;
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+#msgs-banniere {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    display: inline-block;
+}
