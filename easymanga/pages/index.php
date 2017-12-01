@@ -9,15 +9,7 @@
     <body>
         <?php include 'header.php' ; ?>
         
-        <div id="banniere">
-            <div id="produitBanniere">
-                
-            </div>
-        </div>
-        
-        <div id="defilement">
-        
-        </div>
+
 
         <?php include 'footer.php' ; ?>
 
