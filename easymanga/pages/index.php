@@ -9,10 +9,9 @@
     <body>
         <?php include 'header.php' ; ?>
         
-        <br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br>
+        <div id="banniere">
+        
+        </div>
 
         <?php include 'footer.php' ; ?>
 

@@ -14,4 +14,9 @@ strong {
     font-weight: normal;
 }
 
+/* BANNIERE */
 
+#banniere {
+    height: 890px;
+    background-color: #f5f2f2;
+}
