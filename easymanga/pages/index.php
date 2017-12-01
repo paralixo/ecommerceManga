@@ -7,10 +7,13 @@
         <link rel="stylesheet" href="../style/style.css">
     </head>
     <body>
+        
         <?php include 'header.php' ; ?>
         
-        <div id="banniere">
-        
+        <div id="fond_banniere">
+            <div id="banniere">
+            
+            </div>
         </div>
 
         <?php include 'footer.php' ; ?>
