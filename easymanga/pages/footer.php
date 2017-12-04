@@ -35,7 +35,7 @@
         <div class="col-sm-4" id="soutenezNous">
             <h2>Soutenez-nous</h2>
             <p>Afin que le site continue de vous proposer du <strong>nouveau contenu</strong> n'hésitez pas à nous faire un petit don</p>
-            <a href="#" alt="Soutenez-nous" title="Soutenez-nous sur tipee" class="bouttonSoutien">Tipee</a>
+            <a href="#" alt="Soutenez-nous" title="Soutenez-nous sur tipee" class="bouttonSoutien">Tipeee</a>
         </div>
     
     </div>
