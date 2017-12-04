@@ -21,19 +21,19 @@
         
             <nav class="col-sm-12">
                 <ul class="row justify-content-center">
-                    <li class="col-sm-2">
-                        <a href="#">Produits Dérivés</a>
+                    <li class="col-lg-2 col-xl-2">
+                        <a href="#">Produits dérivés</a>
                     </li>
-                    <li class="col-sm-1">
+                    <li class="col-lg-2 col-xl-1">
                         <a href="#">Mangas</a>
                     </li>
-                    <li class="col-sm-1">
+                    <li class="col-lg-2 col-xl-1">
                         <a href="index.php" alt="lien vers l'accueil">Accueil</a>
                     </li>
-                    <li class="col-sm-1">
+                    <li class="col-lg-2 col-xl-1">
                         <a href="contact.php" alt="lien vers formulaire de contact">Contact</a>
                     </li>
-                    <li class="col-sm-2">
+                    <li class="col-lg-2 col-xl-2">
                         <a href="#">Mon Compte</a>
                     </li>
                 </ul>
