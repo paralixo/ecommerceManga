@@ -1,5 +1,9 @@
 /* HEADER */
 
+.align-self-start {
+    margin: 10px 0;
+}
+
 header {
     background-color: #48546C;
     color: white;
