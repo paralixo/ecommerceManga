@@ -47,6 +47,12 @@ header nav ul li a:hover {
     color: #F5F2F2;
 }
 
+header .hr_menu {
+    width: 60%;
+    color: #7E7E7E;
+    margin: 0;
+}
+
 /* Images */
 
 header .logo{
@@ -57,4 +63,9 @@ header .logo{
 header .panier {
     height: 60px;
     width: 60px;
+    margin-top: 10px;
+}
+
+header .nav-tel {
+    margin-top: 20px;
 }
