@@ -18,7 +18,7 @@
         
         
         <div id="selection">
-                
+            <img src="" alt="fond" style="border: 1px solid black;" />
         </div>
         
         <hr>
