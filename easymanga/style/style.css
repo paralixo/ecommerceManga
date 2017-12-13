@@ -15,38 +15,106 @@ strong {
     font-weight: normal;
 }
 
-/* BANNIERE */
-
-
-#fond_banniere {
-    height: 890px;
-    background-color: #f5f2f2;
-}
-/*
-#banniere {
-    position: relative;
-    top: 80px;
-    height: 600px;
-    background-color: burlywood;
-}
-
-#imgs-banniere {
-    position: relative;
-    top: 20%;
-    left: 5%;
-    height: 60%;
-    width: 35%;
-    background-color: aquamarine;
+.btn-2 {
+    background: yellow;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+    margin: 20px 0;
     display: inline-block;
 }
 
-#msgs-banniere {
-    height: 100px;
-    width: 100px;
-    background-color: green;
-    display: inline-block;
+.row {
+    /* Sinon pblm: scroll horizontal */
+    margin: 0;
 }
-*/
+
+/* NOTRE SELECTION */
+
+
+#selection {
+    
+}
+
+/* DERNIERES SORTIES */
+
+#sorties {
+    text-align: center;
+}
+
+#selectionSorties {
+    display: flex;
+}
+
+.bloc_sorties {
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 20px;
+    border: 1px solid black;
+}
+
+.bloc_sorties img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* GOODIES */
+
+#derives {
+    text-align: center;
+}
+
+#derives h2 {
+    font-size: 1.5em;
+}
+
+#derives h3{
+    font-size: 1.25em;
+}
+
+.bloc_derives {
+/*    max-width: 350px;*/
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid black;
+}
+
+.bloc_derives img {
+    border: 1px solid black;
+    max-height: 175px;
+    display: block;
+    margin: 0 auto;
+}
+
+#msgDerives {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 990px) and (max-width: 1039px) {
+    #selectionSorties > .bloc_sorties:nth-child(4) {
+        display:none !important;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 797px) {
+    #selectionSorties > .bloc_sorties:nth-child(3) {
+        display:none !important;
+    }
+}
+
 
 
 
