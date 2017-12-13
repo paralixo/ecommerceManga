@@ -32,8 +32,11 @@ strong {
 /* NOTRE SELECTION */
 
 
+
+
 #selection {
-    
+    background-image: url('../images/dragonsbaballes.png') no-repeats;
+    background-size: 100%;
 }
 
 /* DERNIERES SORTIES */

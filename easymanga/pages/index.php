@@ -10,6 +10,8 @@
         <!-- Google font et Feuille de style -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Poiret+One|Quicksand" rel="stylesheet">
         <link rel="stylesheet" href="../style/style.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           
     </head>
     <body>
@@ -18,8 +20,32 @@
         
         
         <div id="selection">
-            <img src="" alt="fond" style="border: 1px solid black;" />
+            <img id="fond_selection" src="../images/dragonsbaballes.png" alt="fond" style="border: 1px solid black;" />
+            <div>
+                <h2>Notre sélection</h2>
+                <p>Petit layus</p>
+                <a href="#" alt="découvrir">Découvrir</a>
+            </div>
         </div>
+        
+        <!-- positionnement du script a changer -->
+        <script>
+            $(document).ready(function(){
+              var scrollTop = 0;
+              $(window).scroll(function(){
+                scrollTop = $(window).scrollTop();
+                 $('.counter').html(scrollTop);
+
+                if (scrollTop >= 100) {
+                  $('header').css('opacity', '0.8');
+                } else if (scrollTop < 100) {
+                  $('header').css('opacity', '1');
+                } 
+
+              }); 
+
+            });
+        </script>
         
         <hr>
         

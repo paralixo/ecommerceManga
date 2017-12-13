@@ -74,11 +74,12 @@
             </nav>
 
         <a href="#" alt="lien vers mon compte" class="icon d-none d-lg-block d-xl-block col-lg-1 col-xl-1 align-self-center">
-            <i class="fa fa-user" style="font-size:60px"></i>
+            <i class="fa fa-user"></i>
         </a>
 
         <a href="#" alt="lien vers mon panier" class="icon d-none d-lg-block d-xl-block col-lg-1 col-xl-1 align-self-center">
-            <i class="material-icons" style="font-size:60px">shopping_cart</i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
         </a>
         
         
