@@ -11,10 +11,7 @@ footer h2 {
     margin-bottom: 30px;
 }
 
-footer #suivezNous img {
-    width: 50px;
-    margin: 5px;
-}
+/* ELEMS DES DIVS */
 
 footer div {
     text-align: center;
@@ -26,12 +23,28 @@ footer div p {
     margin-bottom: 20px;
 }
 
+/* HR */
+
 footer hr {
     position: relative;
-    top: 25px;;
-    height: 200px;
-    padding: 0 auto;
+    top: 25px;
+    width: 95%;
+    margin: 0 auto 20px auto;
 }
+
+#soutenezNous hr {
+    position: relative;
+    top: 10px;
+}
+
+/* IMAGES */
+
+footer #suivezNous img {
+    width: 50px;
+    margin: 5px;
+}
+
+/* BOUTONS */
 
 .bouttonSoutien {
     color: black;

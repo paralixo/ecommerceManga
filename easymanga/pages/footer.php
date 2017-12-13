@@ -9,7 +9,7 @@
 <footer class="container-fluid">
     <div class="row">
     
-        <div class="col-sm-4" id="suivezNous">
+        <div class="col-sm-6 col-md-4" id="suivezNous">
             <h2>Suivez-nous</h2>
             <div id="reseauxSociaux">
                 <a href="http://www.twitter.com"><img src="../images/originaux/logo_twitter_origin" alt="suivez-nous sur twitter" title="Twitter"></a>
@@ -17,22 +17,25 @@
                 <a href="http://www.instagram.com"><img src="../images/originaux/logo_instagram_origin" alt="suivez-nous sur instagram" title="Instagram"></a>
                 <a href="http://www.pinterest.com"><img src="../images/originaux/logo_pinterest_origin" alt="suivez-nous sur pinterest" title="Pinterest"></a>
             </div>
+            <hr class="d-sm-none d-md-none d-lg-none d-xl-none">
         </div>
 
-    <!--    <hr>-->
+        
 
         <!-- Premier block "Qui sommes nous ?" -->
-        <div class="col-sm-4" id="enSavoirPlus">
+        <div class="col-sm-6 col-md-4" id="enSavoirPlus">
             <h2>En savoir plus</h2>
             <p> 
                 Nous sommes deux étudiants, qui voulons se faire de l'argent. Nous comptons sur cette chère population, cette belle bande de pigeons. Votre bonheur nous voulons, mais votre argent nous préferrons.
             </p>
             <a href="#" alt="En savoir plus" title="En savoir plus" class="bouttonSoutien">En savoir plus</a>
+            <hr class="d-sm-none d-md-none d-lg-none d-xl-none">
         </div>
 
-    <!--    <hr>-->
+        
 
-        <div class="col-sm-4" id="soutenezNous">
+        <div class="col-sm-12 col-md-4" id="soutenezNous">
+            <hr class="d-none d-sm-block d-md-none">
             <h2>Soutenez-nous</h2>
             <p>Afin que le site continue de vous proposer du <strong>nouveau contenu</strong> n'hésitez pas à nous faire un petit don</p>
             <a href="#" alt="Soutenez-nous" title="Soutenez-nous sur tipee" class="bouttonSoutien">Tipeee</a>
