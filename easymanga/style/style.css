@@ -40,6 +40,9 @@ strong {
 }
 
 /* DERNIERES SORTIES */
+#sorties_fond {
+    background: #d3d3d3;
+}
 
 #sorties {
     text-align: center;
@@ -53,7 +56,7 @@ strong {
     max-width: 200px;
     padding: 10px;
     margin: 0 20px;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
 
 .bloc_sorties img {

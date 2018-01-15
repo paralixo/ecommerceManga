@@ -1,25 +1,19 @@
-header .align-self-start {
-    margin: 10px 0;
-}
-
                                                     /* HEADER */
 
 header {
     background-color: #48546C;
     color: white;
-    position: fixed;
-    top:0;
 }
 
 header h1 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 0 10px;
+    padding: 15px 0;
 }
 
 .fa {
-    font-size: 32px;
+    font-size: 25px !important;
 }
 
                                 /* MENU */
@@ -37,10 +31,11 @@ header .hr_menu {
 
 /* MENU SUR PC CENTRE */
 #nav_pc {
-    position: relative;
-    left: 4%;
+    position: absolute;
+    right: 10px;
 }
 
+/* MENU UL & LI... */
 header nav ul {
     list-style: none;
     text-align: center;
@@ -48,29 +43,9 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0;
-    padding: 1px;
-}
-
-/* BORDURE SUR LE COTE */ 
-header nav ul li:after {
-  content : "";
-  position: absolute;
-  right    : 0;
-  top  : 25%;
-  width  : 1px;
-  height   : 50%;  
-  background: #7E7E7E;
-}
-
-header nav ul li:last-child:after {
-  content : "";
-  position: absolute;
-  right    : 0;
-  top  : 25%;
-  width  : 0px;
-  height   : 0%;  
-  background: red;
+    margin: 0 5px;
+    padding: 2px 5px;
+    line-height: 50px;
 }
 
 header nav ul li a {
@@ -78,7 +53,7 @@ header nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 0.9em;
     line-height: 50px;
 }
@@ -88,19 +63,25 @@ header nav ul li a:hover {
     color: #F5F2F2;
 }
 
+/* MENU SUR TEL/IPAD */
+header #nav-tel {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header navbar-toggler-icon {
+    font-size: 100px;
+}
+
                                                     /* IMAGES */
 
 /* IMG LOGO */
 
 header .logo{
-    height: 80px;
-    width: 80px;
-}
-
-/* MENU SUR TEL/IPAD */
-
-header .nav-tel {
-    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    margin: 5px;
 }
 
 /* ICONS */

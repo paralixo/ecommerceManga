@@ -20,7 +20,7 @@
         
         
         <div id="selection">
-            <img id="fond_selection" src="../images/dragonsbaballes.png" alt="fond" style="border: 1px solid black;" />
+<!--            <img id="fond_selection" src="../images/dragonsbaballes.png" alt="fond" style="border: 1px solid black;" />-->
             <div>
                 <h2>Notre sélection</h2>
                 <p>Petit layus</p>
@@ -28,57 +28,38 @@
             </div>
         </div>
         
-        <!-- positionnement du script a changer -->
-        <script>
-            $(document).ready(function(){
-              var scrollTop = 0;
-              $(window).scroll(function(){
-                scrollTop = $(window).scrollTop();
-                 $('.counter').html(scrollTop);
-
-                if (scrollTop >= 100) {
-                  $('header').css('opacity', '0.8');
-                } else if (scrollTop < 100) {
-                  $('header').css('opacity', '1');
-                } 
-
-              }); 
-
-            });
-        </script>
         
-        <hr>
-        
-        <div id="sorties" class="container-fluid">
-            <h2>Les dernières sorties</h2>
-            
-            <div id="selectionSorties" class="row justify-content-center align-items-center">
-                <i class="material-icons">keyboard_arrow_left</i>
-            
-                <div class="bloc_sorties">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
+        <div id="sorties_fond">
+            <div id="sorties" class="container-fluid">
+                <h2>Les dernières sorties</h2>
+
+                <div id="selectionSorties" class="row justify-content-center align-items-center">
+                    <i class="material-icons">keyboard_arrow_left</i>
+
+                    <div class="bloc_sorties">
+                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Naruto 40</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-sm-block">
+                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Naruto 40</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-md-block">
+                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Naruto 40</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-lg-block">
+                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Naruto 40</h3>
+                    </div>
+
+                    <i class="material-icons">keyboard_arrow_right</i>
                 </div>
-                <div class="bloc_sorties d-none d-sm-block">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
-                </div>
-                <div class="bloc_sorties d-none d-md-block">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
-                </div>
-                <div class="bloc_sorties d-none d-lg-block">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
-                </div>
-            
-                <i class="material-icons">keyboard_arrow_right</i>
+
+                <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
             </div>
-            
-            <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
         </div>
         
-        <hr>
         
         <div id="derives" class="container-fluid">
             <div class="row justify-content-center align-items-center">
@@ -126,3 +107,49 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+         positionnement du script a changer 
+        <script>
+            $(document).ready(function(){
+              var scrollTop = 0;
+              $(window).scroll(function(){
+                scrollTop = $(window).scrollTop();
+                 $('.counter').html(scrollTop);
+
+                if (scrollTop >= 100) {
+                  $('header').css('opacity', '0.8');
+                } else if (scrollTop < 100) {
+                  $('header').css('opacity', '1');
+                } 
+
+              }); 
+
+            });
+        </script>
+-->
