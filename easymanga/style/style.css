@@ -42,6 +42,8 @@ strong {
 /* DERNIERES SORTIES */
 #sorties_fond {
     background: #d3d3d3;
+    border-bottom: #DDDDDD 5px solid;
+    border-top: #DDDDDD 5px solid;
 }
 
 #sorties {
