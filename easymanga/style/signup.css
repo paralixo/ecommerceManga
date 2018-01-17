@@ -19,3 +19,7 @@ form button {
 #civ2 {
 	display: unset;
 }
+
+.error { 
+	color: red;
+}
