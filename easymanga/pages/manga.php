@@ -17,48 +17,45 @@
         <?php include 'header.php' ; ?>
         
         
-        <div style="display: flex; width: 90%; margin: 20px auto;" class="justify-content-center">
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
-            </div>
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
-            </div>
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
+        <div id="manga_recherche" class="row container-fluid">
+            <div id="recherche" class="col-3">
+                <form>
+                    <h2>Critères de recherche</h2>
+                    
+                    <fieldset>
+                        <legend>Critère 1</legend>
+                        <ul>
+                            <li>option</li>
+                            <li>option</li>
+                            <li>option</li>
+                            <li>option</li>
+                            <li>option</li>
+                        </ul>
+                    </fieldset>
+                    
+
+                    <h3>Critère 2</h3>
+                    <ul>
+                        <li>option</li>
+                        <li>option</li>
+                        <li>option</li>
+                        <li>option</li>
+                        <li>option</li>
+                    </ul>
+
+                    <h3>Critère 3</h3>
+                    <ul>
+                        <li>option</li>
+                        <li>option</li>
+                        <li>option</li>
+                        <li>option</li>
+                        <li>option</li>
+                    </ul>
+                </form>
             </div>
         </div>
-        
-        <div style="display: flex; width: 90%; margin: 20px auto;" class="justify-content-center">
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
-            </div>
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
-            </div>
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
-            </div>
-        </div>
-        
-        <div style="display: flex; width: 90%; margin: 20px auto;" class="justify-content-center">
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
-            </div>
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
-            </div>
-            <div style="width: 30%; border: 1px solid black";>
-                <img src="../images/naruto-tome-40.jpg" alt="" style="width: 80%; margin: 0 auto;"/>
-                <h3>Titre</h3>
+            <div id="mangas" class="col-9">
+                a
             </div>
         </div>
         

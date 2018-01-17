@@ -29,18 +29,15 @@ strong {
     margin: 0;
 }
 
+/* ---#--- INDEX ---#--- */
+
 /* NOTRE SELECTION */
-
-
-
-
 #selection {
     background-image: url('../images/dragonsbaballes.png') no-repeats;
     background-size: 100%;
 }
 
 /* DERNIERES SORTIES */
-
 #sorties {
     text-align: center;
     background: #d3d3d3;
@@ -66,7 +63,6 @@ strong {
 
 
 /* GOODIES */
-
 #derives {
     text-align: center;
 }
@@ -97,18 +93,7 @@ strong {
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* RESPONSIVE */
 @media screen and (min-width: 990px) and (max-width: 1039px) {
     #selectionSorties > .bloc_sorties:nth-child(4) {
         display:none !important;
@@ -123,9 +108,22 @@ strong {
 
 
 
+/* ---#--- MANGA.PHP ---#--- */
 
+#manga_recherche {
+    margin: 0;  
+    padding: 0;
+}
 
+/* RECHERCHE */
+#recherche {
+    background: red;
+}
 
+/* MANGAS */
+#mangas {
+    background: green;
+}
 
 
 
