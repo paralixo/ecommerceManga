@@ -27,38 +27,38 @@
                 <a href="#" alt="découvrir">Découvrir</a>
             </div>
         </div>
+                   
         
         
-        <div id="sorties_fond">
-            <div id="sorties" class="container-fluid">
-                <h2>Les dernières sorties</h2>
+        <div id="sorties" class="container-fluid">
+            <h2>Les dernières sorties</h2>
 
-                <div id="selectionSorties" class="row justify-content-center align-items-center">
-                    <i class="material-icons">keyboard_arrow_left</i>
+            <div id="selectionSorties" class="row justify-content-center align-items-center">
+                <i class="material-icons">keyboard_arrow_left</i>
 
-                    <div class="bloc_sorties">
-                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                        <h3>Naruto 40</h3>
-                    </div>
-                    <div class="bloc_sorties d-none d-sm-block">
-                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                        <h3>Naruto 40</h3>
-                    </div>
-                    <div class="bloc_sorties d-none d-md-block">
-                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                        <h3>Naruto 40</h3>
-                    </div>
-                    <div class="bloc_sorties d-none d-lg-block">
-                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                        <h3>Naruto 40</h3>
-                    </div>
-
-                    <i class="material-icons">keyboard_arrow_right</i>
+                <div class="bloc_sorties">
+                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                    <h3>Naruto 40</h3>
+                </div>
+                <div class="bloc_sorties d-none d-sm-block">
+                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                    <h3>Naruto 40</h3>
+                </div>
+                <div class="bloc_sorties d-none d-md-block">
+                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                    <h3>Naruto 40</h3>
+                </div>
+                <div class="bloc_sorties d-none d-lg-block">
+                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                    <h3>Naruto 40</h3>
                 </div>
 
-                <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
+                <i class="material-icons">keyboard_arrow_right</i>
             </div>
+
+            <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
         </div>
+        
         
         
         <div id="derives" class="container-fluid">

@@ -26,7 +26,7 @@
                     <a href="#" alt="">Goodies</a>
                 </li>
                 <li>
-                    <a href="#" alt="">Mangas</a>
+                    <a href="manga.php" alt="">Mangas</a>
                 </li>
                 <li>
                     <a href="index.php" alt="lien vers l'accueil">Accueil</a>
@@ -35,6 +35,7 @@
                     <a href="contact.php" alt="lien vers formulaire de contact">Contact</a>
                 </li>
                 
+                <!-- Séparateur -->
                 <li>|</li>
 
                 <li>
@@ -67,7 +68,7 @@
                 </li>
                 <hr class="hr_menu">
                 <li class="col-12">
-                    <a href="#">Mangas</a>
+                    <a href="manga.php">Mangas</a>
                 </li>
                 <hr class="hr_menu">
                 <li class="col-12">
