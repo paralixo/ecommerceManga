@@ -29,6 +29,8 @@ strong {
     margin: 0;
 }
 
+
+
 /* ---#--- INDEX ---#--- */
 
 /* NOTRE SELECTION */
@@ -41,8 +43,8 @@ strong {
 #sorties {
     text-align: center;
     background: #d3d3d3;
-    border-bottom: #DDDDDD 3px solid;
-    border-top: #DDDDDD 3px solid;
+    border-bottom: #DDDDDD 1px solid;
+    border-top: #DDDDDD 1px solid;
 }
 
 #selectionSorties {
@@ -115,7 +117,7 @@ strong {
     padding: 0;
 }
 
-/* RECHERCHE */
+        /* RECHERCHE */
 #recherche {
     background: #eee;
     padding: 5px;
@@ -128,14 +130,44 @@ strong {
 #recherche h2 {
     font-size: 21px;
     text-align: center;
+    display: inline-block;
 }
 
 #recherche fieldset {
-    margin-left: 20px;
+    margin-left: 17px;
+}
+
+/* MENU DEROULANT */
+#filtres fieldset{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 400px) and (max-width: 580px) {
+    #filtres fieldset{
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 400px) {
+    #filtres fieldset{
+        width: calc(100% / 2);
+    }
+}
+
+#recherche button {
+    display: block;
+    margin: 0 auto;
+}
+
+#recherche .collapse.show {
+    display: flex;
 }
 
 
-/* MANGAS */
+        /* MANGAS */
 #mangas {
     background: #F5F5F2;
     margin: 0;
@@ -144,19 +176,59 @@ strong {
 }
 
 #mangas img {
-    max-height: 300px;
     padding: 5px;
+    width: 143px;
+    height: 212px;
 }
 
 #mangas .unManga {
     background: #eee;
     display: inline-block;
-    margin: 10px;
-    max-width: 210px;
+    margin: 10px 0;
+    max-width: 153px;
 }
 
 .unManga .prix {
     font-size: 13px;
     color: #555;
 }
+
+#mangas > div {
+    min-width: 153px;
+}
+
+/* SELECTION PAGE */
+#selection_page {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
+
+#selection_page p {
+    display: inline;
+    position: relative;
+    bottom: 3px;
+    padding: 7px 10px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+#selection_page > div {
+    border: 4px solid #ccc;
+    display: inline;
+    padding: 7px 7px 4px 7px;
+    border-radius: 5px;
+}
+
+#selection_page i {
+    padding: 0 14px 0 7px;
+}
+
+#selection_page i:last-child {
+    padding: 0 7px 0 14px;
+}
+
+
+
+
 
