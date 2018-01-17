@@ -18,46 +18,126 @@
         
         
         <div id="manga_recherche" class="row container-fluid">
-            <div id="recherche" class="col-3">
+            <div id="recherche" class="col-2">
                 <form>
-                    <h2>Critères de recherche</h2>
+                    <h2>Filtres</h2>
                     
                     <fieldset>
                         <legend>Critère 1</legend>
                         <ul>
-                            <li>option</li>
-                            <li>option</li>
-                            <li>option</li>
-                            <li>option</li>
-                            <li>option</li>
-                        </ul>
+                            <li>
+                                <input type="checkbox" name="name" id="name_1" value="" />
+                                <label for="name_1">Option 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_2" value="" />
+                                <label for="name_2">Option 2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_3" value="" />
+                                <label for="name_3">Option 3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_4" value="" />
+                                <label for="name_4">Option 4</label>
+                            </li>
+                        </ul>    
                     </fieldset>
                     
-
-                    <h3>Critère 2</h3>
-                    <ul>
-                        <li>option</li>
-                        <li>option</li>
-                        <li>option</li>
-                        <li>option</li>
-                        <li>option</li>
-                    </ul>
-
-                    <h3>Critère 3</h3>
-                    <ul>
-                        <li>option</li>
-                        <li>option</li>
-                        <li>option</li>
-                        <li>option</li>
-                        <li>option</li>
-                    </ul>
+                    <fieldset>
+                        <legend>Critère 2</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="name" id="name_1" value="" />
+                                <label for="name_1">Option 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_2" value="" />
+                                <label for="name_2">Option 2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_3" value="" />
+                                <label for="name_3">Option 3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_4" value="" />
+                                <label for="name_4">Option 4</label>
+                            </li>
+                        </ul>    
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Critère 3</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="name" id="name_1" value="" />
+                                <label for="name_1">Option 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_2" value="" />
+                                <label for="name_2">Option 2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_3" value="" />
+                                <label for="name_3">Option 3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="name" id="name_4" value="" />
+                                <label for="name_4">Option 4</label>
+                            </li>
+                        </ul>    
+                    </fieldset>
+                        
                 </form>
             </div>
-        </div>
-            <div id="mangas" class="col-9">
-                a
+            
+            <div id="mangas" class="col-10 row">
+                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                    <div class="unManga">
+                    <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                    <p>Titre <span class="prix">8.00€</span></p>
+                </div>
+                </div>
+                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                    <div class="unManga">
+                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <p>Titre <span class="prix">8.00€</span></p>
+                    </div>
+                </div>
+                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                    <div class="unManga">
+                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <p>Titre <span class="prix">8.00€</span></p>
+                    </div>
+                </div>
+                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                    <div class="unManga">
+                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <p>Titre <span class="prix">8.00€</span></p>
+                    </div>
+                </div>
+                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                    <div class="unManga">
+                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <p>Titre <span class="prix">8.00€</span></p>
+                    </div>
+                </div>
+                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                    <div class="unManga">
+                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <p>Titre <span class="prix">8.00€</span></p>
+                    </div>
+                </div>
+                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                    <div class="unManga">
+                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <p>Titre <span class="prix">8.00€</span></p>
+                    </div>
+                </div>
             </div>
         </div>
+            
+
         
         
         <?php include 'footer.php' ; ?>
