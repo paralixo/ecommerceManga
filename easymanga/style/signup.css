@@ -1,0 +1,21 @@
+/* Positionnement des objet dans le cadre */
+
+form label {
+	display: block;
+}
+
+form input {
+	display: block;
+}
+
+form button {
+	display: block;
+}
+
+#civ1 {
+	display: inline-block;
+}
+
+#civ2 {
+	display: unset;
+}

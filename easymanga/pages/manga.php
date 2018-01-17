@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>        
-        <title>easymanga</title>
+        <title>EasyManga</title>
         <meta charset="utf-8" />
         
         <!-- Pour Bootstrap -->
