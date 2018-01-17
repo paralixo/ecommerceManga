@@ -17,125 +17,238 @@
         <?php include 'header.php' ; ?>
         
         
+        
+        
+        
         <div id="manga_recherche" class="row container-fluid">
-            <div id="recherche" class="col-2">
+            <div id="recherche" class="col-12 col-md-2">
                 <form>
-                    <h2>Filtres</h2>
+                    <h2 class="d-none d-md-block">Filtres</h2>
+                    <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#filtres" aria-controls="filtres" aria-expanded="false" aria-label="Toggle navigation">
+                            <h2>Filtres</h2>
+                            <i class="fa fa-angle-down small" aria-hidden="true"></i>
+                    </button>
                     
-                    <fieldset>
-                        <legend>Critère 1</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="name" id="name_1" value="" />
-                                <label for="name_1">Option 1</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_2" value="" />
-                                <label for="name_2">Option 2</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_3" value="" />
-                                <label for="name_3">Option 3</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_4" value="" />
-                                <label for="name_4">Option 4</label>
-                            </li>
-                        </ul>    
-                    </fieldset>
+                    <div class="d-none d-md-block">
+                        <fieldset>
+                            <legend>Genre</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_1" value="" />
+                                    <label for="name_1">Action</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_2" value="" />
+                                    <label for="name_2">Aventure</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_3" value="" />
+                                    <label for="name_3">Comédie</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">Sport</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">SF</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">Horreur</label>
+                                </li>
+                            </ul>    
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Production</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_1" value="" />
+                                    <label for="name_1">En cours</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_2" value="" />
+                                    <label for="name_2">Teminé</label>
+                                </li>
+                            </ul>    
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Critère 3</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_1" value="" />
+                                    <label for="name_1">Option 1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_2" value="" />
+                                    <label for="name_2">Option 2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_3" value="" />
+                                    <label for="name_3">Option 3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">Option 4</label>
+                                </li>
+                            </ul>    
+</fieldset>
+                    </div>
                     
-                    <fieldset>
-                        <legend>Critère 2</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="name" id="name_1" value="" />
-                                <label for="name_1">Option 1</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_2" value="" />
-                                <label for="name_2">Option 2</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_3" value="" />
-                                <label for="name_3">Option 3</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_4" value="" />
-                                <label for="name_4">Option 4</label>
-                            </li>
-                        </ul>    
-                    </fieldset>
-                    
-                    <fieldset>
-                        <legend>Critère 3</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="name" id="name_1" value="" />
-                                <label for="name_1">Option 1</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_2" value="" />
-                                <label for="name_2">Option 2</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_3" value="" />
-                                <label for="name_3">Option 3</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="name" id="name_4" value="" />
-                                <label for="name_4">Option 4</label>
-                            </li>
-                        </ul>    
-                    </fieldset>
+                    <div class="col-12 d-md-none d-lg-none d-xl-none collapse row justify-content-center" id="filtres">
+                        <fieldset class="col-xs-4 col-sm-3">
+                            <legend>Critère 1</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_1" value="" />
+                                    <label for="name_1">Option 1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_2" value="" />
+                                    <label for="name_2">Option 2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_3" value="" />
+                                    <label for="name_3">Option 3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">Option 4</label>
+                                </li>
+                            </ul>    
+                        </fieldset>
+
+                        <fieldset class="col-xs-4 col-sm-3">
+                            <legend>Critère 2</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_1" value="" />
+                                    <label for="name_1">Option 1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_2" value="" />
+                                    <label for="name_2">Option 2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_3" value="" />
+                                    <label for="name_3">Option 3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">Option 4</label>
+                                </li>
+                            </ul>    
+</fieldset>
+
+                        <fieldset class="col-xs-4 col-sm-3">
+                            <legend>Critère 3</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_1" value="" />
+                                    <label for="name_1">Option 1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_2" value="" />
+                                    <label for="name_2">Option 2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_3" value="" />
+                                    <label for="name_3">Option 3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">Option 4</label>
+                                </li>
+                            </ul>    
+</fieldset>
+                        
+                        <fieldset class="col-xs-4 col-sm-3">
+                            <legend>Critère 3</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_1" value="" />
+                                    <label for="name_1">Option 1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_2" value="" />
+                                    <label for="name_2">Option 2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_3" value="" />
+                                    <label for="name_3">Option 3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="name" id="name_4" value="" />
+                                    <label for="name_4">Option 4</label>
+                                </li>
+                            </ul>    
+</fieldset>
+                    </div>
                         
                 </form>
             </div>
             
-            <div id="mangas" class="col-10 row">
-                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+            <div id="mangas" class="col-12 col-md-10 row justify-content-center">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                    <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
-                    <p>Titre <span class="prix">8.00€</span></p>
-                </div>
-                </div>
-                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
-                    <div class="unManga">
-                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <img src="../images/mha.jpg" alt="mha" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
-                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <img src="../images/mha.jpg" alt="mha" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
-                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <img src="../images/mha.jpg" alt="mha" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
-                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <img src="../images/mha.jpg" alt="mha" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
-                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <img src="../images/mha.jpg" alt="mha" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
-                <div class="align-self-center col-xs-12 col-sm-6 col-lg-2">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha.jpg" alt="mha" class="img-fluid"/>
+                        <img src="../images/mha.jpg" alt="mha" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+                    <div class="unManga">
+                        <img src="../images/mha.jpg" alt="mha" class=""/>
+                        <p>Titre <span class="prix">8.00€</span></p>
+                    </div>
+                </div>
+                
+                
+                <div id="selection_page">
+                    <div>
+                        <i class="fa fa-angle-left"></i>
+                        <p>1 SUR 487</p>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
+        
+        
+        
             
 
         

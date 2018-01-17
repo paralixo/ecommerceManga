@@ -1,4 +1,4 @@
-                                                    /* HEADER */
+/* HEADER */
 
 header {
     background-color: #48546C;
@@ -6,7 +6,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family:  'Ubuntu', sans-serif;
     text-align: center;
     margin: 0 10px;
     padding: 15px 0;
@@ -49,11 +49,11 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Noto Sans', 'Quicksand', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    font-weight: 900;
+    font-weight: lighter;
     font-size: 0.9em;
     line-height: 50px;
 }
