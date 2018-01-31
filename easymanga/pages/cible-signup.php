@@ -13,15 +13,22 @@
 	$error1 = "";
 	$error2	= "";
 	$error3 = "";
+	$error4 = "";
 	// Envoi des données dans les variables  	
 	if (isset($_POST["submit"]) && !empty($_POST["submit"])) {
 		$lastname = $_POST["lastname"];
 		$firstname = $_POST["firstname"];
-		$email = $_POST["email"];
 		$login = $_POST["login"];
 		
 		// Conditions d'envoi
-		// Condition civilté
+        // Condition mail
+        if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+            $email = $_POST["email"];
+        }
+        else {
+            $error4 = "Erreur : adresse e-mail invalide";
+        }
+        // Condition civilté
 		if (isset($_POST["civilite"]) == false) {
 			$error1 = "Erreur : aucune civilité n'a été sélectioné";
 		}

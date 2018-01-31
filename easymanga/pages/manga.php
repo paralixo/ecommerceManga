@@ -247,19 +247,19 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha.jpg" alt="mha" class=""/>
+                        <img src="../images/princetennis.jpg" alt="Prince du Tennis" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha9.jpg" alt="mha" class=""/>
+                        <img src="../images/one-punch.jpg" alt="one punch man" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha10.jpg" alt="mha" class=""/>
+                        <img src="../images/mha10.jpg" alt="" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
@@ -298,7 +298,7 @@
                 <div id="selection_page">
                     <div>
                         <i class="fa fa-angle-left"></i>
-                        <p>1 SUR 487</p>
+                        <p>1 SUR 1</p>
                         <i class="fa fa-angle-right"></i>
                     </div>
                 </div>
