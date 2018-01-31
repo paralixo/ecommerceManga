@@ -1,4 +1,13 @@
-<?php 
+<?php
+    // connexion base
+
+    try {
+        $bdd = new PDO('mysql:host=localhost;dbname=easymanga;charset=utf8', 'root', '');
+    }
+    catch(Exception $e) {
+        die('Erreur : '.$e->getMessage());
+    }
+
 	// erreur
 
 	$error1 = "";
@@ -12,7 +21,6 @@
 		$login = $_POST["login"];
 		
 		// Conditions d'envoi
-
 		// Condition civilté
 		if (isset($_POST["civilite"]) == false) {
 			$error1 = "Erreur : aucune civilité n'a été sélectioné";
@@ -35,16 +43,13 @@
 				$error3 = "Erreur : mots de passe différents";
 			}
 
+
 		}
+
+
 
 	// Connexion Base
 
-	try {
-		$bdd = new PDO('mysql:host=localhost;dbname=easymanga;charset=utf8', 'root', '');
-	}
-	catch(Exception $e) {
-		die('Erreur : '.$e->getMessage());
-	}
 
 	$req = $bdd->prepare("INSERT INTO `user`(`login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `id_civilite`) VALUES (?, ?, ?, ?, ?, ?)");
 

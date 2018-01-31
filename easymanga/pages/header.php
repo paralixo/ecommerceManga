@@ -13,7 +13,7 @@
     <div class="row align-items-center">
         
         <!--LOGO-->
-        <a href="index.php" alt="lien vers accueil depuis logo"  class="d-none d-sm-block ">
+        <a href="index.php" title="lien vers accueil depuis logo"  class="d-none d-sm-block ">
             <img class="logo" src="../images/renard.png" alt="logo easyManga" title="Notre magnifique logo"/>
         </a>
         
@@ -24,29 +24,33 @@
         <nav class="justify-content-center d-none d-lg-block d-xl-block" id="nav_pc">
             <ul class="row">
                 <li>
-                    <a href="#" alt="">Goodies</a>
+                    <a href="#" title="">Goodies</a>
                 </li>
                 <li>
-                    <a href="manga.php" alt="">Mangas</a>
+                    <a href="manga.php" title="">Mangas</a>
                 </li>
                 <li>
-                    <a href="index.php" alt="lien vers l'accueil">Accueil</a>
+                    <a href="index.php" title="lien vers l'accueil">Accueil</a>
                 </li>
                 <li>
-                    <a href="contact.php" alt="lien vers formulaire de contact">Contact</a>
+                    <a href="contact.php" title="lien vers formulaire de contact">Contact</a>
                 </li>
                 
                 <!-- Séparateur -->
                 <li>|</li>
 
                 <li>
+<<<<<<< HEAD
                     <a href="signin.php" alt="lien vers mon compte" class="icon">
+=======
+                    <a href="#" title="lien vers mon compte" class="icon">
+>>>>>>> ea50ce69b4472b10bbbc6e759877341092d35c12
                         <i class="fa fa-user"></i>
                         Se Connecter
                     </a>
                 </li>
                 <li>
-                    <a href="#" alt="lien vers mon panier" class="icon">
+                    <a href="#" title="lien vers mon panier" class="icon">
                         <i class="fa fa-shopping-cart"></i>
                         Mon Panier
                     </a>
@@ -73,11 +77,11 @@
                 </li>
                 <hr class="hr_menu">
                 <li class="col-12">
-                    <a href="index.php" alt="lien vers l'accueil">Accueil</a>
+                    <a href="index.php" title="lien vers l'accueil">Accueil</a>
                 </li>
                 <hr class="hr_menu">
                 <li class="col-12">
-                    <a href="contact.php" alt="lien vers formulaire de contact">Contact</a>
+                    <a href="contact.php" title="lien vers formulaire de contact">Contact</a>
                 </li>
                 <hr class="hr_menu">
                 <li class="col-12">
