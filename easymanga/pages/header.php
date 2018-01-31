@@ -40,11 +40,7 @@
                 <li>|</li>
 
                 <li>
-<<<<<<< HEAD
-                    <a href="signin.php" alt="lien vers mon compte" class="icon">
-=======
                     <a href="#" title="lien vers mon compte" class="icon">
->>>>>>> ea50ce69b4472b10bbbc6e759877341092d35c12
                         <i class="fa fa-user"></i>
                         Se Connecter
                     </a>
