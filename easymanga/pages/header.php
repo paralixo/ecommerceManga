@@ -40,9 +40,9 @@
                 <li>|</li>
 
                 <li>
-                    <a href="#" alt="lien vers mon compte" class="icon">
+                    <a href="signin.php" alt="lien vers mon compte" class="icon">
                         <i class="fa fa-user"></i>
-                        Mon Compte
+                        Se Connecter
                     </a>
                 </li>
                 <li>

@@ -74,6 +74,10 @@ header navbar-toggler-icon {
     font-size: 100px;
 }
 
+.sousMenu {
+    display: none;
+}
+
                                                     /* IMAGES */
 
 /* IMG LOGO */
