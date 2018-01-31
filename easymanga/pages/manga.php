@@ -15,11 +15,7 @@
     <body>
         
         <?php include 'header.php' ; ?>
-        
-        
-        
-        
-        
+
         <div id="manga_recherche" class="row container-fluid">
             <div id="recherche" class="col-12 col-md-2">
                 <form>
@@ -221,31 +217,31 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha2.jpg" alt="mha" class=""/>
+                        <img src="../images/db.jpg" alt="Dragon Ball" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha3.jpg" alt="mha" class=""/>
+                        <img src="../images/gto.jpg" alt="GTO lost paradise" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha4.jpg" alt="mha" class=""/>
+                        <img src="../images/Berserk.jpg" alt="berserk" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha6.jpg" alt="mha" class=""/>
+                        <img src="../images/fullmetal.jpg" alt="fullmetal alchemist" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                     <div class="unManga">
-                        <img src="../images/mha7.jpg" alt="mha" class=""/>
+                        <img src="../images/jojo.jpg" alt="jojo's bizarre adventure" class=""/>
                         <p>Titre <span class="prix">8.00€</span></p>
                     </div>
                 </div>
