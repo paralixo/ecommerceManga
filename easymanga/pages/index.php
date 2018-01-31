@@ -38,20 +38,20 @@
                 <i class="material-icons">keyboard_arrow_left</i>
 
                 <div class="bloc_sorties">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
+                    <img src="../images/mha4.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                    <h3>Titre</h3>
                 </div>
                 <div class="bloc_sorties d-none d-sm-block">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
+                    <img src="../images/op.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                    <h3>Titre</h3>
                 </div>
                 <div class="bloc_sorties d-none d-md-block">
                     <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
+                    <h3>Titre</h3>
                 </div>
                 <div class="bloc_sorties d-none d-lg-block">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Naruto 40</h3>
+                    <img src="../images/bleach.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                    <h3>Titre</h3>
                 </div>
 
                 <i class="material-icons">keyboard_arrow_right</i>
