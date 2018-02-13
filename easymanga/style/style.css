@@ -162,6 +162,11 @@ strong {
     margin: 0 auto;
 }
 
+#recherche button i {
+    position: relative;
+    top: 6px;
+}
+
 #recherche .collapse.show {
     display: flex;
 }

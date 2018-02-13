@@ -22,7 +22,7 @@
                     <h2 class="d-none d-md-block">Filtres</h2>
                     <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#filtres" aria-controls="filtres" aria-expanded="false" aria-label="Toggle navigation">
                             <h2>Filtres</h2>
-                            <i class="fa fa-angle-down small" aria-hidden="true"></i>
+                            <i class="material-icons align-items-center">keyboard_arrow_right</i>
                     </button>
                     
                     <div class="d-none d-md-block">
