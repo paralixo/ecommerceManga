@@ -8,8 +8,11 @@
         die('Erreur : '.$e->getMessage());
     }
 
-	// erreur
+    $test_mail = $bdd->prepare("SELECT email_user FROM user");
+    $test_mail->execute();
 
+
+	// erreur
 	$error1 = "";
 	$error2	= "";
 	$error3 = "";
@@ -22,11 +25,11 @@
 		
 		// Conditions d'envoi
         // Condition mail
-        if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+        if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL && $_POST["email"] == $test_mail)){
             $email = $_POST["email"];
         }
         else {
-            $error4 = "Erreur : adresse e-mail invalide";
+            echo $error4 = "Erreur : adresse e-mail invalide";
         }
         // Condition civilté
 		if (isset($_POST["civilite"]) == false) {
@@ -49,13 +52,8 @@
 			else {
 				$error3 = "Erreur : mots de passe différents";
 			}
-
-
 		}
 
-
-
-	// Connexion Base
 
 
 	$req = $bdd->prepare("INSERT INTO `user`(`login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `id_civilite`) VALUES (?, ?, ?, ?, ?, ?)");

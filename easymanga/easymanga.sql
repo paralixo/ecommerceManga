@@ -3,10 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 15 jan. 2018 à 13:59
+-- Généré le :  mar. 13 fév. 2018 à 12:36
 -- Version du serveur :  5.7.19
 -- Version de PHP :  5.6.31
 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -20,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `easymanga`
 --
-CREATE DATABASE IF NOT EXISTS `easymanga` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE easymanga;
 
 -- --------------------------------------------------------
 
@@ -36,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `auteur` (
   `lastname_auteur` varchar(144) NOT NULL,
   PRIMARY KEY (`id_auteur`),
   UNIQUE KEY `id_auteur` (`id_auteur`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -50,7 +49,15 @@ CREATE TABLE IF NOT EXISTS `civilite` (
   `civilite` varchar(5) NOT NULL,
   PRIMARY KEY (`id_civilite`),
   UNIQUE KEY `id_civilite` (`id_civilite`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `civilite`
+--
+
+INSERT INTO `civilite` (`id_civilite`, `civilite`) VALUES
+(1, 'M.'),
+(2, 'Mme');
 
 -- --------------------------------------------------------
 
@@ -66,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `commande` (
   PRIMARY KEY (`id_commande`),
   UNIQUE KEY `id_commande` (`id_commande`),
   KEY `id_user` (`id_user`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -80,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `editeur` (
   `editeur` varchar(144) NOT NULL,
   PRIMARY KEY (`id_editeur`),
   UNIQUE KEY `id_editeur` (`id_editeur`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -94,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `image` (
   `src_image` varchar(250) NOT NULL,
   PRIMARY KEY (`id_image`),
   UNIQUE KEY `id_image` (`id_image`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -117,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `manga` (
   KEY `id_editeur` (`id_editeur`,`id_image`,`id_tome`),
   KEY `id_image` (`id_image`),
   KEY `id_tome` (`id_tome`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='table de recensement des mangas.';
 
 -- --------------------------------------------------------
 
@@ -133,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `tome` (
   `date_tome` date NOT NULL,
   PRIMARY KEY (`id_tome`),
   UNIQUE KEY `id_tome` (`id_tome`)
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -149,15 +156,23 @@ CREATE TABLE IF NOT EXISTS `user` (
   `email_user` varchar(144) NOT NULL,
   `firstname_user` varchar(144) NOT NULL,
   `lastname_user` varchar(144) NOT NULL,
-  `tel_user` int(10) NOT NULL,
-  `cp_user` varchar(5) NOT NULL,
-  `ville_user` varchar(144) NOT NULL,
-  `adresse_user` varchar(240) NOT NULL,
+  `tel_user` int(10) DEFAULT NULL,
+  `cp_user` varchar(5) DEFAULT NULL,
+  `ville_user` varchar(144) DEFAULT NULL,
+  `adresse_user` varchar(240) DEFAULT NULL,
   `id_civilite` int(1) NOT NULL,
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `id_user` (`id_user`),
   KEY `id_civilite` (`id_civilite`)
-) ;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='table utilisateur';
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id_user`, `login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `tel_user`, `cp_user`, `ville_user`, `adresse_user`, `id_civilite`) VALUES
+(4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1),
+(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2);
 
 --
 -- Contraintes pour les tables déchargées
