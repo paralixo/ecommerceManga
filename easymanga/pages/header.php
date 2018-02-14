@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet"> 
 
 <!-- block du header -->
-<header class="container-fluid">
+<header class="container-fluid border-bottom">
     <div class="row align-items-center">
         
         <!--LOGO-->
