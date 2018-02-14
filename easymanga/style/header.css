@@ -3,7 +3,6 @@
 header {
     background-color: rgb(72, 84, 108);
     color: white;
-    position: absolute;
     z-index:1;
 }
 
@@ -12,6 +11,7 @@ header h1 {
     text-align: center;
     margin: 0 10px;
     padding: 15px 0;
+    display: inline-block;
 }
 
 .fa {
@@ -32,10 +32,7 @@ header .hr_menu {
 }
 
 /* MENU SUR PC CENTRE */
-#nav_pc {
-    position: absolute;
-    right: 10px;
-}
+
 
 /* MENU UL & LI... */
 header nav ul {
@@ -48,7 +45,7 @@ header nav ul li {
     margin: 0 5px;
     padding: 2px 5px;
     line-height: 50px;
-    position: relative;
+    display:inline-block;
 }
 
 header nav ul li a {
@@ -108,4 +105,8 @@ header .logo{
 
 header i {
     color: white;
+}
+
+header .logoTaille {
+    display: inline-block !important;
 }

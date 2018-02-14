@@ -10,19 +10,19 @@
 
 <!-- block du header -->
 <header class="container-fluid border-bottom">
-    <div class="row align-items-center">
-        
+    <div class="row">
+        <div class="col-md-4">
         <!--LOGO-->
-        <a href="index.php" title="lien vers accueil depuis logo"  class="d-none d-sm-block ">
+        <a href="index.php" title="lien vers accueil depuis logo"  class="logoTaille d-none d-sm-block ">
             <img class="logo" src="../images/renard.png" alt="logo easyManga" title="Notre magnifique logo"/>
         </a>
         
         <!--TITRE-->
         <h1>easyManga</h1>
-
+        </div>
         <!--MENU-->
-        <nav class="justify-content-center d-none d-lg-block d-xl-block" id="nav_pc">
-            <ul class="row">
+        <nav class="col-md-4">
+            <ul>
                 <li>
                     <a href="#" title="">Goodies</a>
                 </li>
@@ -35,10 +35,12 @@
                 <li>
                     <a href="contact.php" title="lien vers formulaire de contact">Contact</a>
                 </li>
-                
-                <!-- Séparateur -->
-                <li>|</li>
 
+            </ul>
+        </nav>
+        <nav class="col-md-4">
+
+            <ul>
                 <li>
 <!--                    Affichage différent si on est connecté ou pas-->
                     <?php
@@ -72,53 +74,7 @@
                         Mon Panier
                     </a>
                 </li>
-            </ul>   
-        </nav>
-
-        <!--MENU CACHE POUR MOBILE-->
-        <nav class="navbar navbar-dark d-lg-none d-xl-none justify-content-center" id="nav-tel">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-        
-        <nav class="col-12 d-lg-none d-xl-none collapse align-self-end"  id="navbarToggleExternalContent">
-            <hr>
-            <ul class="row justify-content-center">
-                <li class="col-12">
-                    <a href="#">Goodies</a>
-                </li>
-                <hr class="hr_menu">
-                <li class="col-12">
-                    <a href="manga.php">Mangas</a>
-                </li>
-                <hr class="hr_menu">
-                <li class="col-12">
-                    <a href="index.php" title="lien vers l'accueil">Accueil</a>
-                </li>
-                <hr class="hr_menu">
-                <li class="col-12">
-                    <a href="contact.php" title="lien vers formulaire de contact">Contact</a>
-                </li>
-                <hr class="hr_menu">
-                <li class="col-12">
-                    <?php
-                        if (isset($_SESSION['connecte'])) {
-                            echo '<a href="#">Mon Compte</a></li>';
-                            echo '<li class="col-12"><a href="deconnexion.php">Deconnexion</a> ';
-                        } else {
-                            echo '<a href="signin.php">Se connecter</a>';
-                        }
-                    ?>
-                </li>
-                <hr class="hr_menu">
-                <li class="col-md-12 d-lg-none d-xl-none">
-                    <a href="#">Mon Panier</a>
-                </li>
             </ul>
         </nav>
-
-        
-        
     </div>
 </header>
