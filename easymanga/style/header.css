@@ -3,7 +3,7 @@
 header {
     background-color: rgba(72, 84, 108, .9);
     color: white;
-    position: fixed;
+    position: absolute;
     z-index:1;
 }
 
