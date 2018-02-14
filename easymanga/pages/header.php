@@ -103,9 +103,11 @@
                 <hr class="hr_menu">
                 <li class="col-12">
                     <?php
-                        session_start();
                         if (isset($_SESSION['connecte'])) {
-                            echo '<a href="#">Mon Compte</a>';
+                            echo '<a href="#">Mon Compte</a></li>';
+                            echo '<li class="col-12"><a href="deconnexion.php">Deconnexion</a> ';
+                        } else {
+                            echo '<a href="signin.php">Se connecter</a>';
                         }
                     ?>
                 </li>
