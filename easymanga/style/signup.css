@@ -1,31 +1,31 @@
-/* STYLE PAGE INSCRIPTION */
+/* STYLE PAGE INSCRIPTION & CONNEXION*/
 
 body {
-	/*background: url("../images/signx.png");*/
+
 }
 
-/* FORMULAIRE */
-
-form label {
-	display: block;
+#inscription {
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background: #f2f2f2;
 }
 
-form input {
-	display: block;
+#inscription small {
+    display: block;
+    text-align: right;
 }
 
-form button {
-	display: block;
+#inscription div:first-child {
+    display: inline-block;
 }
 
-#civ1 {
-	display: inline-block;
+.form-check {
+	margin-left: 50px;
+    display: inline-block;
 }
 
-#civ2 {
-	display: unset;
-}
-
-.error { 
-	color: red;
+.form-check-label {
+    padding: 0px;
 }
