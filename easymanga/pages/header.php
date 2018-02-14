@@ -40,21 +40,31 @@
                 <li>|</li>
 
                 <li>
+<!--                    Affichage différent si on est connecté ou pas-->
                     <?php
                         session_start();
                         if (isset($_SESSION['connecte'])) {
-                            echo '<a href="#" title="lien vers mon compte" class="icon">';
-                            echo '<i class="fa fa-user"></i>';
-                            echo " ".$_SESSION['username'];
-                            echo '</a>';
+
+                            echo '<div class="dropdown show">';
+                                echo '<a href="#" title="lien vers mon compte" class="icon dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
+                                    echo '<i class="fa fa-user"></i>';
+                                    echo " ".$_SESSION['username'];
+                                echo '</a>';
+
+                                echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">';
+                                    echo ' <a class="dropdown-item" href="deconnexion.php">Deconnexion</a>';
+                                echo ' </div>';
+                            echo '  </div>';
+
+
                         } else {
                             echo '<a href="signin.php" title="se connecter" class="icon">';
                             echo '<i class="fa fa-user"></i>';
-                            echo " Se Connecter";
+                            echo ' Se Connecter';
                             echo '</a>';
+                            echo '<small><a href="signup.php">s\'inscire ici</a></small>';
                         }
                     ?>
-                    <a href="deconnexion.php">deco</a>
                 </li>
                 <li>
                     <a href="#" title="lien vers mon panier" class="icon">
@@ -92,7 +102,12 @@
                 </li>
                 <hr class="hr_menu">
                 <li class="col-12">
-                    <a href="#">Mon Compte</a>
+                    <?php
+                        session_start();
+                        if (isset($_SESSION['connecte'])) {
+                            echo '<a href="#">Mon Compte</a>';
+                        }
+                    ?>
                 </li>
                 <hr class="hr_menu">
                 <li class="col-md-12 d-lg-none d-xl-none">

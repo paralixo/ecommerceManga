@@ -48,6 +48,7 @@ header nav ul li {
     margin: 0 5px;
     padding: 2px 5px;
     line-height: 50px;
+    position: relative;
 }
 
 header nav ul li a {
@@ -63,6 +64,19 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline;
     color: #F5F2F2;
+}
+
+/*Le bouton pour s'inscrire en desous de connexion*/
+header nav ul li small {
+    position: absolute;
+    bottom: -5px;
+    right: 5px;
+    height: 25px;
+}
+
+header nav ul li small a{
+    position: relative;
+    bottom: 15px;
 }
 
 /* MENU SUR TEL/IPAD */
