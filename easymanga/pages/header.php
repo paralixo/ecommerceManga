@@ -40,10 +40,21 @@
                 <li>|</li>
 
                 <li>
-                    <a href="#" title="lien vers mon compte" class="icon">
-                        <i class="fa fa-user"></i>
-                        Se Connecter
-                    </a>
+                    <?php
+                        session_start();
+                        if (isset($_SESSION['connecte'])) {
+                            echo '<a href="#" title="lien vers mon compte" class="icon">';
+                            echo '<i class="fa fa-user"></i>';
+                            echo " ".$_SESSION['username'];
+                            echo '</a>';
+                        } else {
+                            echo '<a href="signin.php" title="se connecter" class="icon">';
+                            echo '<i class="fa fa-user"></i>';
+                            echo " Se Connecter";
+                            echo '</a>';
+                        }
+                    ?>
+                    <a href="deconnexion.php">deco</a>
                 </li>
                 <li>
                     <a href="#" title="lien vers mon panier" class="icon">
