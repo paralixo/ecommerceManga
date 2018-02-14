@@ -21,5 +21,8 @@
             <input type="submit" name="submit" value="Connexion" />
 
         </form>
+
+        <small>Pas de compte ? Inscrivez-vous <a href="signup.php">ici</a></small>
+
     </body>
 </html>

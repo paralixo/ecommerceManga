@@ -59,8 +59,7 @@ $email_valide = false;
                             echo $valide = "CONNEXION EN COURS";
                             session_start();
                             $_SESSION['username'] = $email;
-                            echo "Bienvenue ".$_SESSION['username'];
-                            echo session_name();
+                            $_SESSION['connecte'] = true;
                         } else {
                             echo "Erreur : mot de passe invalide";
                         }
@@ -81,12 +80,6 @@ $email_valide = false;
             echo "Erreur : adresse e-mail invalide";
         }
 
-
-
-
-
-//        $req = $bdd->prepare("INSERT INTO `user`(`login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `id_civilite`) VALUES (?, ?, ?, ?, ?, ?)");
-//        $req->execute(array($login, $pswd, $email, $firstname, $lastname, $civilite));
     }
 
 ?>
