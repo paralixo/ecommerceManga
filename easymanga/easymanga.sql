@@ -161,6 +161,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `ville_user` varchar(144) DEFAULT NULL,
   `adresse_user` varchar(240) DEFAULT NULL,
   `id_civilite` int(1) NOT NULL,
+  `admin`int(1) DEFAULT NULL,
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `id_user` (`id_user`),
   KEY `id_civilite` (`id_civilite`)
@@ -171,8 +172,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id_user`, `login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `tel_user`, `cp_user`, `ville_user`, `adresse_user`, `id_civilite`) VALUES
-(4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1),
-(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2);
+(4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1, 1),
+(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2,  1);
 
 --
 -- Contraintes pour les tables déchargées

@@ -22,7 +22,10 @@
 		$lastname = $_POST["lastname"];
 		$firstname = $_POST["firstname"];
 		$login = $_POST["login"];
-		
+		$email = "";
+		$pswd = "";
+		$civilite = "";
+
 		// Conditions d'envoi
         // Condition mail
         if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL && $_POST["email"] == $test_mail)){

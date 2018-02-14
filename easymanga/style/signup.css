@@ -1,4 +1,10 @@
-/* Positionnement des objet dans le cadre */
+/* STYLE PAGE INSCRIPTION */
+
+body {
+	/*background: url("../images/signx.png");*/
+}
+
+/* FORMULAIRE */
 
 form label {
 	display: block;
