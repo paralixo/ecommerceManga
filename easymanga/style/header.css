@@ -1,8 +1,10 @@
 /* HEADER */
 
 header {
-    background-color: #48546C;
+    background-color: rgba(72, 84, 108, .9);
     color: white;
+    position: fixed;
+    z-index:1;
 }
 
 header h1 {

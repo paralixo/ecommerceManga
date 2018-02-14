@@ -16,13 +16,10 @@
     </head>
     <body>
 
-        <?php include 'header.php' ; ?>
-        <a href="signup.php">Signup</a>
-        <a href="signin.php">Signin</a> 
-        
+
         <div id="selection">
 <!--            <img id="fond_selection" src="../images/dragonsbaballes.png" alt="fond" style="border: 1px solid black;" />-->
-            <div>
+                <?php include 'header.php' ; ?>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,13 +28,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="http://lorempicsum.com/futurama/1920/700/4" alt="First slide">
+                            <img class="d-block w-100 img-fluid" src="http://lorempicsum.com/futurama/1920/825/4" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="http://lorempicsum.com/simpsons/1920/700/4" alt="Second slide">
+                            <img class="d-block w-100" src="http://lorempicsum.com/simpsons/1920/825/4" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="http://lorempicsum.com/nemo/1920/700/4" alt="Third slide">
+                            <img class="d-block w-100" src="http://lorempicsum.com/nemo/1920/825/4" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -49,7 +46,6 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
         </div>
                    
         

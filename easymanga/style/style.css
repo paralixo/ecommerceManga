@@ -40,8 +40,16 @@ strong {
 #selection {
     background-image: url('../images/dragonsbaballes.png') no-repeats;
     background-size: 100%;
+    height: 100vh;
 }
 
+.carousel-inner {
+    height:100vh;
+}
+
+.carousel-item {
+    height:100vh;
+}
 /* DERNIERES SORTIES */
 #sorties {
     text-align: center;
