@@ -25,6 +25,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `manga`
+--
+
+DROP TABLE IF EXISTS `manga`;
+CREATE TABLE IF NOT EXISTS `manga` (
+  `id_manga` int(11) NOT NULL AUTO_INCREMENT,
+  `name_manga` varchar(200) NOT NULL,
+  `prix_manga` varchar(5) NOT NULL,
+  `id_auteur` int(11) NOT NULL,
+  `id_editeur` int(11) NOT NULL,
+  `id_image` int(11) NOT NULL,
+  `id_tome` int(11) NOT NULL,
+  PRIMARY KEY (`id_manga`),
+  UNIQUE KEY `id_manga` (`id_manga`),
+  KEY `id_auteur` (`id_auteur`),
+  KEY `id_editeur` (`id_editeur`,`id_image`,`id_tome`),
+  KEY `id_image` (`id_image`),
+  KEY `id_tome` (`id_tome`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='table de recensement des mangas.';
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `auteur`
 --
 
@@ -105,28 +128,6 @@ CREATE TABLE IF NOT EXISTS `image` (
 
 -- --------------------------------------------------------
 
---
--- Structure de la table `manga`
---
-
-DROP TABLE IF EXISTS `manga`;
-CREATE TABLE IF NOT EXISTS `manga` (
-  `id_manga` int(11) NOT NULL AUTO_INCREMENT,
-  `name_manga` varchar(200) NOT NULL,
-  `prix_manga` varchar(5) NOT NULL,
-  `id_auteur` int(11) NOT NULL,
-  `id_editeur` int(11) NOT NULL,
-  `id_image` int(11) NOT NULL,
-  `id_tome` int(11) NOT NULL,
-  PRIMARY KEY (`id_manga`),
-  UNIQUE KEY `id_manga` (`id_manga`),
-  KEY `id_auteur` (`id_auteur`),
-  KEY `id_editeur` (`id_editeur`,`id_image`,`id_tome`),
-  KEY `id_image` (`id_image`),
-  KEY `id_tome` (`id_tome`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='table de recensement des mangas.';
-
--- --------------------------------------------------------
 
 --
 -- Structure de la table `tome`
@@ -161,6 +162,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `ville_user` varchar(144) DEFAULT NULL,
   `adresse_user` varchar(240) DEFAULT NULL,
   `id_civilite` int(1) NOT NULL,
+  `admin`int(1) DEFAULT NULL,
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `id_user` (`id_user`),
   KEY `id_civilite` (`id_civilite`)
@@ -170,9 +172,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id_user`, `login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `tel_user`, `cp_user`, `ville_user`, `adresse_user`, `id_civilite`) VALUES
-(4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1),
-(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2);
+INSERT INTO `user` (`id_user`, `login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `tel_user`, `cp_user`, `ville_user`, `adresse_user`, `id_civilite`, `admin`) VALUES
+(4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1, 1),
+(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2,  1);
 
 --
 -- Contraintes pour les tables déchargées
