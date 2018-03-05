@@ -58,6 +58,10 @@
         ?>
         
         <?php include 'header.php' ; ?>
+        
+        
+        
+        
 
         <div id="manga_recherche" class="row container-fluid">
             <div id="recherche" class="col-12 col-md-2">
@@ -254,32 +258,67 @@
             <div id="mangas" class="col-12 col-md-10 row justify-content-center">
                 
                 
-                <?php 
-
-                for ($i = 0; $i < $GLOBALS["nb_manga_page"]; $i++) { ?>
-                    <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                        <div class="unManga">
-                            <img src=<?php echo $manga_img[$i] ?> alt=<?php echo $name_manga[$i] ?> class=""/>
-                            <p><?php echo $name_manga[$i] ?> <span class="prix"><?php echo $prix_manga[$i] ?>€</span></p>
-                        </div>
-                    </div>
-
-                <?php } ?>
                 
                 
-                <div id="selection_page">
-                    <div>
-                        <i class="fa fa-angle-left"></i>
-                        <p>1 SUR <?php echo ceil(count($name_manga)/$GLOBALS["nb_manga_page"]) ?></p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
+                
+            </div>
+            
+            <!-- placement temporaire -->
+            <div id="selection_page">
+                <div>
+                    <i class="fa fa-angle-left" id='prev'></i>
+                    <p>1 SUR <?php echo ceil(count($name_manga)/$GLOBALS["nb_manga_page"]) ?></p>
+                    <i class="fa fa-angle-right" id='next'></i>
                 </div>
-                
-                
             </div>
         </div>
         
         
+        
+        
+        <script>
+            var index_page = 0;
+            
+            
+            var req = function(index) {
+                if (window.XMLHttpRequest) {
+                    httpRequest = new XMLHttpRequest();
+                    if (httpRequest.overrideMimeType) {
+                        httpRequest.overrideMimeType('text/xml');
+                    }
+                }
+
+                httpRequest.onreadystatechange = function() {
+                    if (httpRequest.readyState === 4) {
+                        document.getElementById('mangas').innerHTML = httpRequest.responseText;
+                    }
+                }
+
+                httpRequest.open('GET', 'recherche_manga.php?xmin='+index, true);
+                httpRequest.send();
+            }
+            
+            
+            var next = document.getElementById('next');
+            next.addEventListener('click', function() {
+                //doit etre la meme valeur dans recherche_manga.php
+                index_page += 4;
+                req(index_page);
+            })
+            
+            var next = document.getElementById('prev');
+            next.addEventListener('click', function() {
+                //doit etre la meme valeur dans recherche_manga.php
+                if (index_page != 0) {
+                    index_page -= 4;
+                    req(index_page);
+                }
+            })
+            
+            // génération par défaut
+            req(index_page);
+            
+        </script>
         
             
 
