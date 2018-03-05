@@ -38,7 +38,6 @@
                         echo $error1;
                         echo '</div>';
                     }
-
                 ?>
             
 
