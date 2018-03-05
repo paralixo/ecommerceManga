@@ -15,48 +15,46 @@
     <body>
         
         <?php 
-        try {
-            $bdd = new PDO('mysql:host=localhost;dbname=easymanga;charset=utf8', 'root', '');
-        }
-        catch(Exception $e) {
-            die('Erreur : '.$e->getMessage());
-        }
-        
-        
-        $test_manga = $bdd->prepare("SELECT src_image FROM image");
-        $test_manga->execute();
-        $manga_img = array();
-        $i = 0;
-        while ($donnees = $test_manga->fetch() ) {
-                //var_dump($donnees);
-                $manga_img[$i] = $donnees[0];
-                $i++;
-        }
-        $test_manga->closeCursor();
-        
-        $test_manga = $bdd->prepare("SELECT name_manga FROM manga");
-        $test_manga->execute();
-        $name_manga = array();
-        $i = 0;
-        while ($donnees = $test_manga->fetch() ) {
-                //var_dump($donnees);
-                $name_manga[$i] = $donnees[0];
-                $i++;
-        }
-        $test_manga->closeCursor();
-        
-        $test_manga = $bdd->prepare("SELECT prix_manga FROM manga");
-        $test_manga->execute();
-        $prix_manga = array();
-        $i = 0;
-        while ($donnees = $test_manga->fetch() ) {
-                //var_dump($donnees);
-                $prix_manga[$i] = $donnees[0];
-                $i++;
-        }
-        $test_manga->closeCursor();
-        
-        
+            try {
+                $bdd = new PDO('mysql:host=localhost;dbname=easymanga;charset=utf8', 'root', '');
+            }
+            catch(Exception $e) {
+                die('Erreur : '.$e->getMessage());
+            }
+
+
+            $test_manga = $bdd->prepare("SELECT src_image FROM image");
+            $test_manga->execute();
+            $manga_img = array();
+            $i = 0;
+            while ($donnees = $test_manga->fetch() ) {
+                    $manga_img[$i] = $donnees[0];
+                    $i++;
+            }
+            $test_manga->closeCursor();
+
+            $test_manga = $bdd->prepare("SELECT name_manga FROM manga");
+            $test_manga->execute();
+            $name_manga = array();
+            $i = 0;
+            while ($donnees = $test_manga->fetch() ) {
+                    $name_manga[$i] = $donnees[0];
+                    $i++;
+            }
+            $test_manga->closeCursor();
+
+            $test_manga = $bdd->prepare("SELECT prix_manga FROM manga");
+            $test_manga->execute();
+            $prix_manga = array();
+            $i = 0;
+            while ($donnees = $test_manga->fetch() ) {
+                    $prix_manga[$i] = $donnees[0];
+                    $i++;
+            }
+            $test_manga->closeCursor();
+
+
+            $nb_manga_page = 6;
         ?>
         
         <?php include 'header.php' ; ?>
@@ -257,7 +255,8 @@
                 
                 
                 <?php 
-                for ($i = 0; $i < count($name_manga); $i++) { ?>
+
+                for ($i = 0; $i < $GLOBALS["nb_manga_page"]; $i++) { ?>
                     <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
                         <div class="unManga">
                             <img src=<?php echo $manga_img[$i] ?> alt=<?php echo $name_manga[$i] ?> class=""/>
@@ -271,7 +270,7 @@
                 <div id="selection_page">
                     <div>
                         <i class="fa fa-angle-left"></i>
-                        <p>1 SUR 1</p>
+                        <p>1 SUR <?php echo ceil(count($name_manga)/$GLOBALS["nb_manga_page"]) ?></p>
                         <i class="fa fa-angle-right"></i>
                     </div>
                 </div>
