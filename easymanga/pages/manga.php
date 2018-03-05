@@ -14,6 +14,51 @@
     </head>
     <body>
         
+        <?php 
+        try {
+            $bdd = new PDO('mysql:host=localhost;dbname=easymanga;charset=utf8', 'root', '');
+        }
+        catch(Exception $e) {
+            die('Erreur : '.$e->getMessage());
+        }
+        
+        
+        $test_manga = $bdd->prepare("SELECT src_image FROM image");
+        $test_manga->execute();
+        $manga_img = array();
+        $i = 0;
+        while ($donnees = $test_manga->fetch() ) {
+                //var_dump($donnees);
+                $manga_img[$i] = $donnees[0];
+                $i++;
+        }
+        $test_manga->closeCursor();
+        
+        $test_manga = $bdd->prepare("SELECT name_manga FROM manga");
+        $test_manga->execute();
+        $name_manga = array();
+        $i = 0;
+        while ($donnees = $test_manga->fetch() ) {
+                //var_dump($donnees);
+                $name_manga[$i] = $donnees[0];
+                $i++;
+        }
+        $test_manga->closeCursor();
+        
+        $test_manga = $bdd->prepare("SELECT prix_manga FROM manga");
+        $test_manga->execute();
+        $prix_manga = array();
+        $i = 0;
+        while ($donnees = $test_manga->fetch() ) {
+                //var_dump($donnees);
+                $prix_manga[$i] = $donnees[0];
+                $i++;
+        }
+        $test_manga->closeCursor();
+        
+        
+        ?>
+        
         <?php include 'header.php' ; ?>
 
         <div id="manga_recherche" class="row container-fluid">
@@ -209,90 +254,18 @@
             </div>
             
             <div id="mangas" class="col-12 col-md-10 row justify-content-center">
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/mha1.jpg" alt="mha" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
+                
+                
+                <?php 
+                for ($i = 0; $i < count($name_manga); $i++) { ?>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+                        <div class="unManga">
+                            <img src=<?php echo $manga_img[$i] ?> alt=<?php echo $name_manga[$i] ?> class=""/>
+                            <p><?php echo $name_manga[$i] ?> <span class="prix"><?php echo $prix_manga[$i] ?>€</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/db.jpg" alt="Dragon Ball" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/gto.jpg" alt="GTO lost paradise" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/Berserk.jpg" alt="berserk" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/fullmetal.jpg" alt="fullmetal alchemist" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/jojo.jpg" alt="jojo's bizarre adventure" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/princetennis.jpg" alt="Prince du Tennis" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/one-punch.jpg" alt="one punch man" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/mha10.jpg" alt="" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/op.jpg" alt="mha" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/bleach.jpg" alt="mha" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/naruto.jpg" alt="mha" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/hxh.jpg" alt="mha" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                    <div class="unManga">
-                        <img src="../images/inuyashiki.jpg" alt="mha" class=""/>
-                        <p>Titre <span class="prix">8.00€</span></p>
-                    </div>
-                </div>
+
+                <?php } ?>
                 
                 
                 <div id="selection_page">
