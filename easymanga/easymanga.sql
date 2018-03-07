@@ -238,6 +238,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `ville_user` varchar(144) DEFAULT NULL,
   `adresse_user` varchar(240) DEFAULT NULL,
   `id_civilite` int(1) NOT NULL,
+  `admin` int (1)DEFAULT NULL,
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `id_user` (`id_user`),
   KEY `id_civilite` (`id_civilite`)
