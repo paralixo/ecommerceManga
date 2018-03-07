@@ -48,10 +48,11 @@
 
     for ($i = $xmin; $i < $xmax && $i < count($name_manga); $i++) { ?>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-            <div class="unManga">
+            <?php $url_name = str_replace(' ','',$name_manga[$i]); ?>
+            <a href=<?php echo "produit.php?name=$url_name&amp;id=$i" ?>  class="unManga">
                 <img src=<?php echo $manga_img[$i] ?> alt=<?php echo $name_manga[$i] ?> class=""/>
                 <p><?php echo $name_manga[$i] ?> <span class="prix"><?php echo $prix_manga[$i] ?>€</span></p>
-            </div>
+            </a>
         </div>
 
     <?php } ?>

@@ -257,7 +257,7 @@
             
             <div id="mangas" class="col-12 col-md-10 row justify-content-center">
                 
-                <div id="bidon"></div>
+                <div id="livres" class="col-12 col-md-10 row justify-content-center"></div>
                 
                 
                 <div id="selection_page">
@@ -288,7 +288,7 @@
 
                 httpRequest.onreadystatechange = function() {
                     if (httpRequest.readyState === 4) {
-                        document.getElementById('bidon').innerHTML = httpRequest.responseText;
+                        document.getElementById('livres').innerHTML = httpRequest.responseText;
                     }
                 }
 
