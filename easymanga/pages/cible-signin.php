@@ -8,6 +8,19 @@
         die('Erreur : '.$e->getMessage());
     }
 
+    $admin = $bdd->prepare("SELECT admin FROM user");
+    $admin->execute();
+
+    // On mets tout les emails de la base dans un tableau (on a pas réussi autrement)
+    $admin_user = array();
+    $i = 0;
+    while ($donnees = $admin->fetch() ) {
+            //var_dump($donnees);
+            $admin_user[$i] = $donnees[0];
+            $i++;
+    }
+    $admin->closeCursor();
+
     // On charge les différents emails & mots de passe pour vérifier plus tard qu'ils existent
     $test_mail = $bdd->prepare("SELECT email_user FROM user");
     $test_mail->execute();
@@ -60,6 +73,8 @@ $email_valide = false;
                             session_start();
                             $_SESSION['username'] = $email;
                             $_SESSION['connecte'] = true;
+                            $_SESSION['admin'] = $admin_user[$i];
+                            
                         } else {
                             echo "Erreur : mot de passe invalide";
                         }

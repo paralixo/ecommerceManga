@@ -54,6 +54,9 @@
                                 echo '</a>';
 
                                 echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">';
+                                    if ($_SESSION['admin'] == 1) {
+                                        echo ' <a class="dropdown-item" href="admin.php">Admin</a>';
+                                    }
                                     echo ' <a class="dropdown-item" href="deconnexion.php">Deconnexion</a>';
                                 echo ' </div>';
                             echo '  </div>';
