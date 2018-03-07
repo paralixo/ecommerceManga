@@ -257,20 +257,18 @@
             
             <div id="mangas" class="col-12 col-md-10 row justify-content-center">
                 
+                <div id="bidon"></div>
                 
                 
-                
-                
-            </div>
-            
-            <!-- placement temporaire -->
-            <div id="selection_page">
-                <div>
-                    <i class="fa fa-angle-left" id='prev'></i>
-                    <p>1 SUR <?php echo ceil(count($name_manga)/$GLOBALS["nb_manga_page"]) ?></p>
-                    <i class="fa fa-angle-right" id='next'></i>
+                <div id="selection_page">
+                    <div>
+                        <i class="fa fa-angle-left" id='prev'></i>
+                        <p><span id="n_page_actuel">1</span> SUR <?php echo ceil(count($name_manga)/$GLOBALS["nb_manga_page"]) ?></p>
+                        <i class="fa fa-angle-right" id='next'></i>
+                    </div>
                 </div>
             </div>
+            
         </div>
         
         
@@ -290,7 +288,7 @@
 
                 httpRequest.onreadystatechange = function() {
                     if (httpRequest.readyState === 4) {
-                        document.getElementById('mangas').innerHTML = httpRequest.responseText;
+                        document.getElementById('bidon').innerHTML = httpRequest.responseText;
                     }
                 }
 
@@ -302,22 +300,30 @@
             var next = document.getElementById('next');
             next.addEventListener('click', function() {
                 //doit etre la meme valeur dans recherche_manga.php
-                index_page += 4;
-                req(index_page);
+                var next_contenu = document.getElementById('n_page_actuel');
+                if (parseInt(next_contenu.innerHTML) != <?php echo ceil(count($name_manga)/$GLOBALS["nb_manga_page"]) ?>){
+                    index_page += 6;
+                    var next_contenu = document.getElementById('n_page_actuel');
+                    next_contenu.innerHTML = parseInt(next_contenu.innerHTML) + 1;
+
+                    req(index_page);
+                }
             })
             
             var next = document.getElementById('prev');
             next.addEventListener('click', function() {
                 //doit etre la meme valeur dans recherche_manga.php
                 if (index_page != 0) {
-                    index_page -= 4;
+                    index_page -= 6;
+                    var prev_contenu = document.getElementById('n_page_actuel');
+                    prev_contenu.innerHTML = parseInt(prev_contenu.innerHTML) - 1;
+                    
                     req(index_page);
                 }
             })
             
             // génération par défaut
             req(index_page);
-            
         </script>
         
             

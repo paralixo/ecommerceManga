@@ -38,7 +38,7 @@
     $test_manga->closeCursor();
 
 
-    $nb_manga_page = 4;
+    $nb_manga_page = 6;
 
     $xmin = $_GET['xmin'];
     $xmax = $xmin + $nb_manga_page;
