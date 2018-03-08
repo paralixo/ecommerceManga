@@ -196,14 +196,28 @@ strong {
     max-width: 153px;
 }
 
+.unManga {
+    display: block;
+}
+
 .unManga .prix {
     font-size: 13px;
     color: #555;
 }
 
-#mangas > div {
+#livres > div{
     min-width: 153px;
 }
+
+#prev:hover, #next:hover {
+    cursor: pointer
+}
+
+/*
+#mangas > div > div {
+    min-width: 153px;
+}
+*/
 
 /* SELECTION PAGE */
 #selection_page {
