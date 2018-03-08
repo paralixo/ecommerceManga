@@ -57,7 +57,7 @@
             $nb_manga_page = 6;
         ?>
         
-        <?php include 'header.php' ; ?>
+        <?php include 'header.php'; ?>
         
         
         
@@ -330,7 +330,7 @@
 
         
         
-        <?php include 'footer.php' ; ?>
+        <?php include 'footer.php'; ?>
 
 
         

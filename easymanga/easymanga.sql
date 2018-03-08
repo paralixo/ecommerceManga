@@ -248,12 +248,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id_user`, `login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `tel_user`, `cp_user`, `ville_user`, `adresse_user`, `id_civilite`) VALUES
-(4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1),
-(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2),
-(6, 'edfrtghjk;l:m', '', '', 'zdfrgthyuk', 'defrgthyjui', NULL, NULL, NULL, NULL, 2),
-(7, 'edfrtghjk;l:m', '', '', 'zdfrgthyuk', 'defrgthyjui', NULL, NULL, NULL, NULL, 2),
-(8, 'dcvfbgnh,j', '', '', 'vdfbgh,jv', 'efrgthby', NULL, NULL, NULL, NULL, 2);
+INSERT INTO `user` (`id_user`, `login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `tel_user`, `cp_user`, `ville_user`, `adresse_user`, `id_civilite`, `admin`) VALUES
+(4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1, 1),
+(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2, 1);
 
 --
 -- Contraintes pour les tables déchargées

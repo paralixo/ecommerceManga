@@ -19,7 +19,7 @@
 
         <div id="selection">
 <!--            <img id="fond_selection" src="../images/dragonsbaballes.png" alt="fond" style="border: 1px solid black;" />-->
-                <?php include 'header.php' ; ?>
+                <?php include 'header.php'; ?>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -117,7 +117,7 @@
         </div>
         
         
-        <?php include 'footer.php' ; ?>
+        <?php include 'footer.php'; ?>
 
 
         

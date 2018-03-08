@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../style/style.css">
     </head>
     <body>
-        <?php include 'header.php' ; ?>
+        <?php include 'header.php'; ?>
 
         <form>
             <input type="text" name="nom" placeholder="Votre nom"/>
@@ -19,6 +19,6 @@
             <textarea></textarea>
         </form>
 
-        <?php include 'footer.php' ; ?>
+        <?php include 'footer.php'; ?>
     </body>
 </html>

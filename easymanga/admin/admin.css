@@ -1,0 +1,13 @@
+@media screen and (max-width: 789px){
+    #pipe{
+        display: none;
+    }
+}
+
+/* GLOBAL */
+
+/* HEADER */
+
+#pipe:hover {
+    color: #000;
+}

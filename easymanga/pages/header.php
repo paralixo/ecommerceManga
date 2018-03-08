@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-md-4">
         <!--LOGO-->
-        <a href="index.php" title="lien vers accueil depuis logo"  class="logoTaille d-none d-sm-block ">
+        <a href="index.php" title="lien vers accueil depuis logo" class="logoTaille d-none d-sm-block ">
             <img class="logo" src="../images/renard.png" alt="logo easyManga" title="Notre magnifique logo"/>
         </a>
         
@@ -55,7 +55,7 @@
 
                                 echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">';
                                     if ($_SESSION['admin'] == 1) {
-                                        echo ' <a class="dropdown-item" href="admin.php">Admin</a>';
+                                        echo ' <a class="dropdown-item" href="../admin/admin.php">Admin</a>';
                                     }
                                     echo ' <a class="dropdown-item" href="deconnexion.php">Deconnexion</a>';
                                 echo ' </div>';
@@ -67,7 +67,7 @@
                             echo '<i class="fa fa-user"></i>';
                             echo ' Se Connecter';
                             echo '</a>';
-                            echo '<small><a href="signup.php">s\'inscire ici</a></small>';
+                            echo ';
                         }
                     ?>
                 </li>
