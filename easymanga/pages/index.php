@@ -9,17 +9,19 @@
         
         <!-- Google font et Feuille de style -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Poiret+One|Quicksand" rel="stylesheet">
-        <link rel="stylesheet" href="../style/produit.css">
+        <link rel="stylesheet" href="../style/style.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           
     </head>
     <body>
+        
+        <?php include 'header.php'; ?>
 
 
         <div id="selection">
 <!--            <img id="fond_selection" src="../images/dragonsbaballes.png" alt="fond" style="border: 1px solid black;" />-->
-                <?php include 'header.php'; ?>
+                
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

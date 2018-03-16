@@ -67,7 +67,7 @@
                             echo '<i class="fa fa-user"></i>';
                             echo ' Se Connecter';
                             echo '</a>';
-                            echo ';
+                           
                         }
                     ?>
                 </li>
