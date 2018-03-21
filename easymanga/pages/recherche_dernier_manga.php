@@ -47,7 +47,7 @@
     }
     $test_manga->closeCursor();
 
-    $test_manga = $bdd->prepare("SELECT date_tome FROM tome ORDER BY timestamp");
+    $test_manga = $bdd->prepare("SELECT date_tome FROM tome order by date_tome desc");
     $test_manga->execute();
     $manga_date = array();
     $i = 0;
@@ -65,11 +65,7 @@
 
 
         // ce qui va etre ecrit 
-    for ($i = 0; $i < count($manga_date); $i++) { ?>
-        <div><?php echo $manga_date[$i];  ?> </div> 
-    <?php } ?>
-
-    for ($i = $xmin; $i < $xmax; $i++) { ?>
+    for ($i = $xmin; $i < $xmax && $i < count($name_manga); $i++) { ?>
         <div class="bloc_sorties d-none d-lg-block">
             <img src="<?php echo $manga_img[$i] ?>" alt="<?php echo $name_manga[$i] ?>" class="img-fluid" />
             <h3><?php echo $name_manga[$i] ?></h3>
@@ -77,4 +73,4 @@
 
     <?php } ?>
         
-        ?>
+        

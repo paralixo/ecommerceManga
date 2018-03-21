@@ -54,30 +54,30 @@
         
         <div id="sorties" class="container-fluid">
             <h2>Les dernières sorties</h2>
-<i class="material-icons" id="prev">keyboard_arrow_left</i>
-            <div id="selectionSorties" class="row justify-content-center align-items-center">
-                
-                
-                <div class="bloc_sorties">
-                    <img src="../images/mha4.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
-                </div>
-                <div class="bloc_sorties d-none d-sm-block">
-                    <img src="../images/mha6.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
-                </div>
-                <div class="bloc_sorties d-none d-md-block">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
-                </div>
-                <div class="bloc_sorties d-none d-lg-block">
-                    <img src="../images/mha9.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
-                </div>
 
-                
+            <div id="selectionSorties" class="row justify-content-center align-items-center">
+                <i class="material-icons" id="prev">keyboard_arrow_left</i>
+                <div>
+                    <div class="bloc_sorties">
+                        <img src="../images/mha4.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-sm-block">
+                        <img src="../images/mha6.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-md-block">
+                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-lg-block">
+                        <img src="../images/mha9.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
+                </div>
+                <i class="material-icons" id="next">keyboard_arrow_right</i>   
             </div>
-<i class="material-icons" id="next">keyboard_arrow_right</i>
+
             <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
         </div>
         
@@ -96,7 +96,8 @@
 
                 httpRequest.onreadystatechange = function() {
                     if (httpRequest.readyState === 4) {
-                        document.getElementById('selectionSorties').innerHTML = httpRequest.responseText;
+                        var zoneDernieresSorties = document.getElementById('selectionSorties').getElementsByTagName("div")[0];
+                        zoneDernieresSorties.innerHTML = httpRequest.responseText;
                     }
                 }
 
@@ -107,25 +108,14 @@
             
             var next = document.getElementById('next');
             next.addEventListener('click', function() {
-               
-
-              
                     index_page += 1;
- 
-
                     req(index_page);
-                console.log(index_page);
-                
             })
             
             var next = document.getElementById('prev');
             next.addEventListener('click', function() {
-                
                 if (index_page != 0) {
-                    index_page -= 4;
-                    var prev_contenu = document.getElementById('n_page_actuel');
-                    prev_contenu.innerHTML = parseInt(prev_contenu.innerHTML) - 1;
-                    
+                    index_page -= 1;      
                     req(index_page);
                 }
             })

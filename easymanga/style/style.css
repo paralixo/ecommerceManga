@@ -50,7 +50,7 @@ strong {
     border-top: #DDDDDD 1px solid;
 }
 
-#selectionSorties {
+#selectionSorties, #selectionSorties > div {
     display: flex;
 }
 
