@@ -73,6 +73,7 @@ $email_valide = false;
                             $_SESSION['username'] = $email;
                             $_SESSION['connecte'] = true;
                             $_SESSION['admin'] = $admin_user[$i];
+                            $_SESSION['panier'] = array();
                             header('Location: http://localhost/ecommerceManga/easymanga/pages/index.php');
                             exit();
                             

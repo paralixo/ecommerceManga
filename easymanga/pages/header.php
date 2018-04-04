@@ -72,7 +72,7 @@
                     ?>
                 </li>
                 <li>
-                    <a href="#" title="lien vers mon panier" class="icon">
+                    <a href="panier.php" title="lien vers mon panier" class="icon">
                         <i class="fa fa-shopping-cart"></i>
                         Mon Panier
                     </a>
