@@ -9,17 +9,19 @@
         
         <!-- Google font et Feuille de style -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Poiret+One|Quicksand" rel="stylesheet">
-        <link rel="stylesheet" href="../style/produit.css">
+        <link rel="stylesheet" href="../style/style.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           
     </head>
     <body>
+        
+        <?php include 'header.php'; ?>
 
 
         <div id="selection">
 <!--            <img id="fond_selection" src="../images/dragonsbaballes.png" alt="fond" style="border: 1px solid black;" />-->
-                <?php include 'header.php'; ?>
+                
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -54,30 +56,73 @@
             <h2>Les dernières sorties</h2>
 
             <div id="selectionSorties" class="row justify-content-center align-items-center">
-                <i class="material-icons">keyboard_arrow_left</i>
-
-                <div class="bloc_sorties">
-                    <img src="../images/mha4.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
+                <i class="material-icons" id="prev">keyboard_arrow_left</i>
+                <div>
+                    <div class="bloc_sorties">
+                        <img src="../images/mha4.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-sm-block">
+                        <img src="../images/mha6.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-md-block">
+                        <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
+                    <div class="bloc_sorties d-none d-lg-block">
+                        <img src="../images/mha9.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
+                        <h3>Titre</h3>
+                    </div>
                 </div>
-                <div class="bloc_sorties d-none d-sm-block">
-                    <img src="../images/op.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
-                </div>
-                <div class="bloc_sorties d-none d-md-block">
-                    <img src="../images/naruto-tome-40.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
-                </div>
-                <div class="bloc_sorties d-none d-lg-block">
-                    <img src="../images/bleach.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
-                    <h3>Titre</h3>
-                </div>
-
-                <i class="material-icons">keyboard_arrow_right</i>
+                <i class="material-icons" id="next">keyboard_arrow_right</i>   
             </div>
 
             <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
         </div>
+        
+        
+        <script>
+            var index_page = 0;
+            
+            
+            var req = function(index) {
+                if (window.XMLHttpRequest) {
+                    httpRequest = new XMLHttpRequest();
+                    if (httpRequest.overrideMimeType) {
+                        httpRequest.overrideMimeType('text/xml');
+                    }
+                }
+
+                httpRequest.onreadystatechange = function() {
+                    if (httpRequest.readyState === 4) {
+                        var zoneDernieresSorties = document.getElementById('selectionSorties').getElementsByTagName("div")[0];
+                        zoneDernieresSorties.innerHTML = httpRequest.responseText;
+                    }
+                }
+
+                httpRequest.open('GET', 'recherche_dernier_manga.php?xmin='+index, true);
+                httpRequest.send();
+            }
+            
+            
+            var next = document.getElementById('next');
+            next.addEventListener('click', function() {
+                    index_page += 1;
+                    req(index_page);
+            })
+            
+            var next = document.getElementById('prev');
+            next.addEventListener('click', function() {
+                if (index_page != 0) {
+                    index_page -= 1;      
+                    req(index_page);
+                }
+            })
+            
+            // génération par défaut
+       //     req(index_page);
+        </script>
         
         
         

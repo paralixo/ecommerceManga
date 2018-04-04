@@ -69,11 +69,13 @@ $email_valide = false;
 
                         // On vérifie que c'est le bon mdp
                         if ($mdp_utilisateur[$i] == $pswd) {
-                            echo $valide = "CONNEXION EN COURS";
                             session_start();
                             $_SESSION['username'] = $email;
                             $_SESSION['connecte'] = true;
                             $_SESSION['admin'] = $admin_user[$i];
+                            $_SESSION['panier'] = array();
+                            header('Location: http://localhost/ecommerceManga/easymanga/pages/index.php');
+                            exit();
                             
                         } else {
                             echo "Erreur : mot de passe invalide";

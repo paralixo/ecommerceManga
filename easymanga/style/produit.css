@@ -1,11 +1,84 @@
-body > div {
-    margin: 30px 0;
+body {
+    background: url('http://www.espero.fr/media/394955/69w3ut.jpg') 100%;
 }
 
-p {
-    margin: 20px 0;
+#produit ul {
+    list-style: none;
+    padding: 0;
+}
+
+#produit {
+    width: 80%;
+    margin: 30px auto;
+}
+
+#img_manga {
+    max-height: 400px;
+}
+
+#resume {
+    margin: 20px 10px;
+    text-align: justify;
 }
 
 #description {
     margin: 0 20px;
+}
+
+#produit h2 {
+    text-align: center;
+}
+
+#description ul {
+    margin-left: 10px;
+}
+
+#tomes {
+    margin: auto;
+}
+
+#tomes li{
+    border: 2px #ccc solid;
+    border-radius: 7px;
+    background: #f2f2f5;
+    padding: 5px;
+}
+
+#tomes li span {
+    margin: 0 10px 0 70px;
+}
+
+@media screen and (max-width: 992px) {
+    #produit {
+        width: 90%;
+    }
+    
+    #img_manga {
+        margin: auto;
+    }
+    
+    #description ul {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    #description ul li {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #produit {
+        width: 100%;
+    }
+    
+    #description {
+        margin: 0;
+    }
+    
+    #description ul {
+        display: block;
+        margin: 20px 0 0;
+    }
 }
