@@ -290,11 +290,11 @@
                     if (httpRequest.readyState === 4) {
                         document.getElementById('livres').innerHTML = httpRequest.responseText;
                     }
-                }
+                };
 
                 httpRequest.open('GET', 'recherche_manga.php?xmin='+index, true);
                 httpRequest.send();
-            }
+            };
             
             
             var next = document.getElementById('next');
@@ -308,7 +308,7 @@
 
                     req(index_page);
                 }
-            })
+            });
             
             var next = document.getElementById('prev');
             next.addEventListener('click', function() {
@@ -320,7 +320,7 @@
                     
                     req(index_page);
                 }
-            })
+            });
             
             // génération par défaut
             req(index_page);

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../style/signup.css">
 	</head>
-	<body>
+        	<body>
 		<?php include('cible-signup.php');?>
 
         <?php include 'header.php'; ?>
@@ -52,8 +52,6 @@
             </div>
 
             <hr/>
-
-<!--			<button class="btn">Suivant</button>-->
 
 			<!-- 2nd partie du formulaire d'inscription identifiant/mdp -->
 

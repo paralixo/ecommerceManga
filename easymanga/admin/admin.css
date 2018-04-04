@@ -6,8 +6,16 @@
 
 /* GLOBAL */
 
+
 /* HEADER */
 
 #pipe:hover {
     color: #000;
 }
+
+/* MAIN */
+
+.formLeft {
+    display: block;
+}
+
