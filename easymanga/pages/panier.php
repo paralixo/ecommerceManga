@@ -19,7 +19,6 @@
         <?php include 'header.php' ; ?>
                
         <?php
-        
             try {
                 $bdd = new PDO('mysql:host=localhost;dbname=easymanga;charset=utf8', 'root', '');
             }
@@ -47,14 +46,14 @@
                         $prix_total = 0.0;
                         echo '<ul>';
                         for ($i = 0; $i < count($_SESSION['panier']); $i++) {
-                            echo '<li>'.$name_manga[$_SESSION['panier'][$i][0]].' : tome '.$_SESSION['panier'][$i][1].' | '.$_SESSION['panier'][$i][2].'€ <button><i class="fa fa-trash-o"></i>
+                            echo '<li>'.$name_manga[$_SESSION['panier'][$i][0]].' : tome '.$_SESSION['panier'][$i][1].' | '.$_SESSION['panier'][$i][2].'€ <button class="trash"><i class="fa fa-trash-o"></i>
                                 </button></li>';
                             $prix_total += $_SESSION['panier'][$i][2];
                         }
                         echo '</ul>';
                     ?>
                 </div>
-                <div class="col-3"> 
+                <div class="col-3" id="test"> 
                     <span><?php echo count($_SESSION['panier']); ?> article(s)<br/>Total : <?php echo $prix_total; ?>€<br/></span>
                     <button class="btn btn-primary">Valider votre achat</button>
                 </div>
@@ -63,10 +62,9 @@
         </div>
         
         <script>
-            var index_page = 0;
             
             
-            var req = function(type) {
+            var req = function(id) {
                 if (window.XMLHttpRequest) {
                     httpRequest = new XMLHttpRequest();
                     if (httpRequest.overrideMimeType) {
@@ -76,30 +74,27 @@
 
                 httpRequest.onreadystatechange = function() {
                     if (httpRequest.readyState === 4) {
-                        document.getElementById('produits').innerHTML = httpRequest.responseText;
+                        document.getElementById('test').innerHTML = httpRequest.responseText;
                     }
                 }
 
-                httpRequest.open('GET', 'gestion_panier.php?type='+type, true);
+                httpRequest.open('GET', 'gestion_panier.php?id='+id, true);
                 httpRequest.send();
             }
             
-            
-            var next = document.getElementById('next');
-            next.addEventListener('click', function() {
-                //doit etre la meme valeur dans recherche_manga.php
-                var next_contenu = document.getElementById('n_page_actuel');
-                if (parseInt(next_contenu.innerHTML) != <?php echo ceil(count($name_manga)/$GLOBALS["nb_manga_page"]) ?>){
-                    index_page += 6;
-                    var next_contenu = document.getElementById('n_page_actuel');
-                    next_contenu.innerHTML = parseInt(next_contenu.innerHTML) + 1;
-
-                    req(index_page);
+            var next = document.querySelectorAll(".trash");
+            console.log(next);
+            for (var i = 0; i< next.length; i++) {
+                next[i].onclick = function() {
+                    console.log(this);
+                    this.parentNode.innerHTML='';
+                    req(1);
                 }
-            })
+            }
+
             
             // génération par défaut
-            req(index_page);
+            
         </script>
         
         
