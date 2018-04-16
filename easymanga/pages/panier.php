@@ -88,7 +88,7 @@
                 next[i].onclick = function() {
                     console.log(this);
                     this.parentNode.innerHTML='';
-                    req(1);
+                    req(0);
                 }
             }
 
