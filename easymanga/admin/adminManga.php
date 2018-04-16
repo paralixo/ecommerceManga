@@ -29,15 +29,16 @@
     <div class="row">
         <div class="col-6 col-md-6">
             <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div class="nav nav-tabs" id="nav-tab-auteur" role="tablist">
                     <a class="nav-item nav-link active" id="nav-auteurAjout-tab" data-toggle="tab" href="#auteurAjout"
                        role="tab"
                        aria-controls="nav-auteurAjout" aria-selected="true">ajouter</a>
-                    <a class="nav-item nav-link" id="nav-auteurSuppr-tab" data-toggle="tab" href="#auteurSuppr" role="tab"
+                    <a class="nav-item nav-link" id="nav-auteurSuppr-tab" data-toggle="tab" href="#auteurSuppr"
+                       role="tab"
                        aria-controls="nav-auteurSuppr" aria-selected="false">modifier</a>
                 </div>
             </nav>
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content" id="nav-tabContent-auteur">
                 <div class="tab-pane fade show active formLeft" id="auteurAjout" role="tabpanel"
                      aria-labelledby="auteurAjout-tab">
                     <!--    ajouter un auteur -->
@@ -59,17 +60,72 @@
                     </form>
                 </div>
             </div>
-                <!--    ajouter un editeur -->
-                <!--    supprimer un editeur -->
-                <!--    ajouter un genre -->
-                <!--    supprimer un genre -->
-        </div>
-    </div>
-    <!--    ajouter un manga -->
-    <form action="cible-admin.php" method="post">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab-editeur" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-editeurAjout-tab" data-toggle="tab" href="#editeurAjout"
+                       role="tab"
+                       aria-controls="nav-editeurAjout" aria-selected="true">ajouter</a>
+                    <a class="nav-item nav-link" id="nav-editeurSuppr-tab" data-toggle="tab" href="#editeurSuppr"
+                       role="tab"
+                       aria-controls="nav-editeurSuppr" aria-selected="false">modifier</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent-editeur">
+                <div class="tab-pane fade show active formLeft" id="editeurAjout" role="tabpanel"
+                     aria-labelledby="editeurAjout-tab">
+                    <!--    ajouter un editeur -->
+                    <form action="cible-admin.php" method="post">
+                        <label>
+                            Nom de l'editeur :
+                            <input type="text" name="editeur" required>
+                        </label>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="editeurSuppr" role="tabpanel" aria-labelledby="editeurSuppr-tab">
+                    <!--    supprimer un editeur -->
+                    <form action="cible-admin.php" method="post">
 
-    </form>
-    <!--    supprimer un manga -->
+                    </form>
+                </div>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-auteurAjout-tab" data-toggle="tab"
+                           href="#auteurAjout"
+                           role="tab"
+                           aria-controls="nav-auteurAjout" aria-selected="true">ajouter</a>
+                        <a class="nav-item nav-link" id="nav-auteurSuppr-tab" data-toggle="tab" href="#auteurSuppr"
+                           role="tab"
+                           aria-controls="nav-auteurSuppr" aria-selected="false">modifier</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active formLeft" id="auteurAjout" role="tabpanel"
+                         aria-labelledby="auteurAjout-tab">
+                        <!--    ajouter un genre -->
+                        <form action="cible-admin.php" method="post">
+                            <label>
+                                Nom de l'auteur :
+                                <input type="text" name="lastname" required>
+                            </label>
+                            <label>
+                                Prénom de l'auteur :
+                                <input type="text" name="firstname" required>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="auteurSuppr" role="tabpanel" aria-labelledby="auteurSuppr-tab">
+                        <!--    supprimer un genre -->
+                        <form action="cible-admin.php" method="post">
+
+                        </form>
+                    </div>
+                </div>
+                <!--    ajouter un manga -->
+                <form action="cible-admin.php" method="post">
+
+                </form>
+                <!--    supprimer un manga -->
+            </div>
 </main>
 
 
