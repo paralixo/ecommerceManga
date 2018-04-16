@@ -3,111 +3,219 @@
 header {
     background-color: rgb(72, 84, 108);
     color: white;
-    z-index:1;
-    max-height: 70px;
+    height: auto;
+    vertical-align: middle;
+    padding:5px;
+}
+
+header ul {
+    margin:0; !important;
 }
 
 header h1 {
     font-family:  'Ubuntu', sans-serif;
-    text-align: center;
-    margin: 0 10px;
-    display: inline-block;
-    vertical-align: middle;
+    margin-bottom: 0; !important;
 }
 
-.fa {
-    font-size: 25px !important;
+header a {
+    color: #f2f2f2;
 }
 
-                                /* MENU */
-
-/* HR*/ 
-.separateur {
-    margin-left: 30px;
-}
-
-header .hr_menu {
-    width: 60%;
-    color: #7E7E7E;
-    margin: 0;
-}
-
-/* MENU SUR PC CENTRE */
-
-
-/* MENU UL & LI... */
-header nav ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-}
-
-header nav ul li {
-    margin: 0 5px;
-    padding: 2px 5px;
-    display:inline-block;
-
-}
-
-header nav ul li a {
-    font-family: 'Noto Sans', 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-weight: lighter;
-    font-size: 17px;
-    line-height: 50px;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-    color: #F5F2F2;
-}
-
-/*Le bouton pour s'inscrire en desous de connexion*/
-/*header nav ul li small {*/
-    /*position: absolute;*/
-    /*bottom: -5px;*/
-    /*right: 5px;*/
-    /*height: 25px;*/
-/*}*/
-
-/*header nav ul li small a{*/
-    /*position: relative;*/
-    /*bottom: 15px;*/
-/*}*/
-
-/* MENU SUR TEL/IPAD */
-header #nav-tel {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-header navbar-toggler-icon {
-    font-size: 100px;
-}
-
-.sousMenu {
-    display: none;
-}
-
-                                                    /* IMAGES */
-
-/* IMG LOGO */
-
-header .logo{
-    height: 60px;
-    width: 60px;
-    margin: 5px;
-}
-
-/* ICONS */
-
-header i {
+header a:hover {
     color: white;
 }
 
-header .logoTaille {
-    display: inline-block !important;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header #header-pc {
+        display: none;
+    }
+
+    #header-sm hr {
+        width:70%;
+        margin:10px auto;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    #menu-connection-sm li {
+        display: inline-block;
+        font-size: 18px;
+        width:49%;
+        padding-right: 1%;
+        text-align: center;
+    }
+
+    #menu-sm li{
+        display: inline-block;
+        width:30%;
+        text-align: center;
+        font-size: 20px;
+    }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 799px) and (min-width: 600px) {
+    header #header-pc {
+        display: none;
+    }
+
+    #header-sm hr {
+        width:70%;
+        margin:10px auto;
+    }
+
+    #hr-1 {
+        display: none;
+    }
+
+    #logo-header-sm {
+        width:48%;
+        display: inline-block;
+    }
+
+    #menu-connection-sm {
+        width: 50%;
+        display: inline-block;
+    }
+
+    #menu-connection-sm li {
+        display: inline-block;
+        font-size: 20px;
+        width:49%;
+        padding-right: 1%;
+    }
+
+    #menu-sm li{
+        display: inline-block;
+        width:30%;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (min-width: 800px) {
+    header #header-sm {
+        display: none;
+    }
+
+    header #logo-header-pc {
+        display: inline-flex;
+        vertical-align: middle;
+        margin-bottom: 5px;
+        float: left;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header #menu-pc {
+        display: inline-flex;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    header li {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+    header a {
+        font-size: 18px;
+    }
+
+    header #menu-connection-pc {
+        display: inline-flex;
+        float: right;
+    }
+
+    .fa {
+        font-size: 20px !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    header #logo-header-pc {
+        display: inline-flex;
+        vertical-align: middle;
+        margin-bottom: 5px;
+        float: left;
+    }
+
+    header h1{
+        margin-top: 5px;
+        font-size: xx-large;
+    }
+
+    header #menu-pc {
+        display: inline-flex;
+        margin-right: 6%;
+        margin-left: 7%;
+    }
+
+    header li {
+        display: inline-block;
+        padding: 11px;
+    }
+
+    header a {
+        font-size: 22px;
+    }
+
+    header #menu-connection-pc {
+        display: inline-flex;
+        float: right;
+    }
+
+    .fa {
+        font-size: 25px !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    header #logo-header-pc {
+        display: inline-flex;
+        vertical-align: middle;
+        margin-bottom: 5px;
+        float: left;
+    }
+
+    header h1{
+        margin-top: 5px;
+        font-size: xx-large;
+    }
+
+    header #menu-pc {
+        display: inline-flex;
+        margin-right: 7%;
+        margin-left: 15%;
+    }
+
+    header li {
+        display: inline-block;
+        padding: 11px;
+    }
+
+    header a {
+        font-size: 22px;
+    }
+
+    header #menu-connection-pc {
+        display: inline-flex;
+        float: right;
+    }
+
+    .fa {
+        font-size: 25px !important;
+    }
+}
+
+
+
