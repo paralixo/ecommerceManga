@@ -82,3 +82,46 @@ body {
         margin: 20px 0 0;
     }
 }
+
+/*  PANIER */
+
+#panier {
+    background: #f2f2f2;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#panier ul {
+    list-style: none;
+}
+
+#panier #produits {
+    border-right: 1px solid #dedede;
+}
+
+#panier #produits li {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    border: 1px dashed #dfdfdf;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 19px;;
+}
+
+.trash {
+    margin-left: 2%;;
+}
+
+#page_panier footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #panier #produits {
+        border-right: none;
+    }
+}

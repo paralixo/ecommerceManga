@@ -80,8 +80,10 @@ $email_valide = false;
                                     $j++;
                             }
                             $test_nom->closeCursor();
-                            
+
                             session_start();
+
+                            
                             $_SESSION['username'] = $nom[$i];
                             $_SESSION['connecte'] = true;
                             $_SESSION['admin'] = $admin_user[$i];

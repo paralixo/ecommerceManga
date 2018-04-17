@@ -4,7 +4,7 @@ body {
     background: url('http://www.espero.fr/media/394955/69w3ut.jpg') 100%;
 }
 
-#inscription {
+#inscription, #connexion {
     width: 50%;
     margin: 30px auto;
     border-radius: 10px;
@@ -12,9 +12,10 @@ body {
     background: #f2f2f2;
 }
 
-#inscription small {
+#inscription small, #connexion small {
     display: block;
     text-align: right;
+    margin-top: 15px;
 }
 
 #inscription div:first-child {
@@ -22,10 +23,14 @@ body {
 }
 
 .form-check {
-	margin-left: 50px;
+	margin-left: 5%;
     display: inline-block;
 }
 
 .form-check-label {
     padding: 0px;
+}
+
+#connexion #valider {
+    margin-left: 5%;
 }

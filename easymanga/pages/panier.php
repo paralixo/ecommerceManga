@@ -14,7 +14,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           
     </head>
-    <body>
+    <body id="page_panier">
 
         <?php include 'header.php' ; ?>
                
@@ -38,24 +38,26 @@
             
         ?>
         
-        <div class="container-fluid" id="produit">
+        <div class="container-fluid" id="panier">
             
             <div class="row">
-                <div class="col-9" id="produits">
+                <div class="col-12 col-md-9" id="produits">
                     <?php 
                         $prix_total = 0.0;
                         echo '<ul>';
                         for ($i = 0; $i < count($_SESSION['panier']); $i++) {
-                            echo '<li>'.$name_manga[$_SESSION['panier'][$i][0]].' : tome '.$_SESSION['panier'][$i][1].' | '.$_SESSION['panier'][$i][2].'€ <button class="trash"><i class="fa fa-trash-o"></i>
+                            echo '<li>'.$name_manga[$_SESSION['panier'][$i][0]].' : tome '.$_SESSION['panier'][$i][1].' | '.$_SESSION['panier'][$i][2].'€ <button class="trash btn btn-secondary"><i class="fa fa-trash-o"></i>
                                 </button></li>';
                             $prix_total += $_SESSION['panier'][$i][2];
                         }
                         echo '</ul>';
                     ?>
                 </div>
-                <div class="col-3" id="test"> 
+                <div class="col-12 col-md-3" id="infos"> 
+                    <hr class="d-block d-md-none"/>
                     <span><?php echo count($_SESSION['panier']); ?> article(s)<br/>Total : <?php echo $prix_total; ?>€<br/></span>
-                    <button class="btn btn-primary">Valider votre achat</button>
+                    <hr/>
+                    <button class="btn btn-primary" onclick="alert('Votre achat a bien été effectué')">Valider votre achat</button>
                 </div>
             </div>
                 
@@ -72,11 +74,6 @@
                     }
                 }
 
-                httpRequest.onreadystatechange = function() {
-                    if (httpRequest.readyState === 4) {
-                        document.getElementById('test').innerHTML = httpRequest.responseText;
-                    }
-                }
 
                 httpRequest.open('GET', 'gestion_panier.php?id='+id, true);
                 httpRequest.send();
