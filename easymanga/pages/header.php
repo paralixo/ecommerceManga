@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu|Poiret+One|Quicksand" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../style/header.css">
+<link rel="stylesheet" type="text/css" href="../style/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
@@ -13,7 +14,7 @@
     <div id="header-pc">
         <!--TITRE-->
         <div id="logo-header-pc">
-            <a href="../test/index.php" title="home page"><h1>easyManga</h1></a>
+            <a href="index.php" title="home page"><h1>easyManga</h1></a>
         </div>
         <!--MENU-->
         <div id="menu-pc">
@@ -23,7 +24,7 @@
                         <a href="manga.php" title="">Mangas</a>
                     </li>
                     <li>
-                        <a href="../test/index.php" title="lien vers l'accueil">Accueil</a>
+                        <a href="index.php" title="lien vers l'accueil">Accueil</a>
                     </li>
                     <li>
                         <a href="contact.php" title="lien vers formulaire de contact">Contact</a>
@@ -45,7 +46,7 @@
                             echo '<div class="dropdown show">';
                             echo '<a href="#" title="lien vers mon compte" class="icon dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
                             echo '<i class="fa fa-user"></i>';
-                            echo " " . $_SESSION['username'];
+                            echo " ".$_SESSION['username'];
                             echo '</a>';
 
                             echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">';

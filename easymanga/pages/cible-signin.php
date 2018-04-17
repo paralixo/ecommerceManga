@@ -69,8 +69,20 @@ $email_valide = false;
 
                         // On vérifie que c'est le bon mdp
                         if ($mdp_utilisateur[$i] == $pswd) {
+                            
+                            $test_nom = $bdd->prepare("SELECT firstname_user FROM user");
+                            $test_nom->execute();  
+                            $nom = array();
+                            $j = 0;
+                            while ($donnees = $test_nom->fetch() ) {
+                                    //var_dump($donnees);
+                                    $nom[$j] = $donnees[0];
+                                    $j++;
+                            }
+                            $test_nom->closeCursor();
+                            
                             session_start();
-                            $_SESSION['username'] = $email;
+                            $_SESSION['username'] = $nom[$i];
                             $_SESSION['connecte'] = true;
                             $_SESSION['admin'] = $admin_user[$i];
                             $_SESSION['panier'] = array();
