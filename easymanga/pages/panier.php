@@ -35,34 +35,59 @@
                     $i++;
             }
             $test_manga->closeCursor();
+        
+        
+        
+        
+        if (isset($_SESSION['connecte'])) {
+            echo '
+                <div class="container-fluid" id="panier">
+
+                    <div class="row">
+                        <div class="col-12 col-md-9" id="produits">
+                            '; 
+                                $prix_total = 0.0;
+                                echo '<ul>';
+                                for ($i = 0; $i < count($_SESSION['panier']); $i++) {
+                                    echo '<li>'.$name_manga[$_SESSION['panier'][$i][0]].' : tome '.$_SESSION['panier'][$i][1].' | '.$_SESSION['panier'][$i][2].'€ <button class="trash btn btn-secondary"><i class="fa fa-trash-o"></i>
+                                        </button></li>';
+                                    $prix_total += $_SESSION['panier'][$i][2];
+                                }
+                                echo '</ul>
+
+                        </div>
+                        <div class="col-12 col-md-3" id="infos"> 
+                            <hr class="d-block d-md-none"/>
+                            <span>'; echo count($_SESSION['panier']); echo' article(s)<br/>Total : '; echo $prix_total; echo '€<br/></span>
+                            <hr/>
+                            <button class="btn btn-primary" onclick="alert("Votre achat a bien été effectué")">Valider votre achat</button>
+                        </div>
+                    </div>
+
+                </div> ';
+
+        } else {
+                echo '
+                <div>
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"> Veuillez vous connecter pour acceder au panier </h5>
+                      </div>
+                      <div class="modal-footer">
+                        <a class="btn btn-secondary" href="signup.php">Inscription</a>
+                        <a class="btn btn-primary" href="signin.php">Connexion</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div> ';
             
+        }
+        
         ?>
-        
-        <div class="container-fluid" id="panier">
-            
-            <div class="row">
-                <div class="col-12 col-md-9" id="produits">
-                    <?php 
-                        $prix_total = 0.0;
-                        echo '<ul>';
-                        for ($i = 0; $i < count($_SESSION['panier']); $i++) {
-                            echo '<li>'.$name_manga[$_SESSION['panier'][$i][0]].' : tome '.$_SESSION['panier'][$i][1].' | '.$_SESSION['panier'][$i][2].'€ <button class="trash btn btn-secondary"><i class="fa fa-trash-o"></i>
-                                </button></li>';
-                            $prix_total += $_SESSION['panier'][$i][2];
-                        }
-                        echo '</ul>';
-                    ?>
-                </div>
-                <div class="col-12 col-md-3" id="infos"> 
-                    <hr class="d-block d-md-none"/>
-                    <span><?php echo count($_SESSION['panier']); ?> article(s)<br/>Total : <?php echo $prix_total; ?>€<br/></span>
-                    <hr/>
-                    <button class="btn btn-primary" onclick="alert('Votre achat a bien été effectué')">Valider votre achat</button>
-                </div>
-            </div>
-                
-        </div>
-        
+
         <script>
             
             
