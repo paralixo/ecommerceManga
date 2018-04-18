@@ -127,40 +127,7 @@
         
         
         
-        <div id="derives" class="container-fluid">
-            <div class="row justify-content-center align-items-center">
-                <div class="bloc_derives col-7 col-md-3 col-lg-3">
-                    <img src="" alt="figurine" class="img-fluid" />
-                    <h3>Figurines</h3>
-                </div>
-                <div class="bloc_derives col-7 col-md-3 col-lg-3">
-                    <img src="" alt="Posters" class="img-fluid" />
-                    <h3>Autres</h3>
-                </div>
-                <div class="bloc_derives col-7 col-md-3 col-lg-3">
-                    <img src="" alt="T-Shirts" class="img-fluid" />
-                    <h3>Vêtements</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="bloc_derives col-7 col-md-3 col-lg-3">
-                    <img src="" alt="figurine" class="img-fluid" />
-                    <h3>Porte-clés</h3>
-                </div>
-                <div id="msgDerives" class="bloc_derives col-7 col-md-3 col-lg-3 d-none d-md-block">
-                    <h2>Tout les produits dérivés de vos mangas préférés</h2>
-                    <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrir</a>
-                </div>
-                <div class="bloc_derives col-7 col-md-3 col-lg-3">
-                    <img src="" alt="T-Shirts" class="img-fluid" />
-                    <h3>Posters</h3>
-                </div>
-            </div>
-            <div class="d-md-none">
-                <h2>Tout les produits dérivés de vos mangas préférés</h2>
-                <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrir</a>
-            </div>
-        </div>
+       
         
         
         <?php include 'footer.php'; ?>
