@@ -3,11 +3,10 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 05 mars 2018 à 13:16
+-- Généré le :  mer. 18 avr. 2018 à 07:51
 -- Version du serveur :  5.7.19
 -- Version de PHP :  5.6.31
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -35,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `auteur` (
   `lastname_auteur` varchar(144) NOT NULL,
   PRIMARY KEY (`id_auteur`),
   UNIQUE KEY `id_auteur` (`id_auteur`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ;
 
 --
 -- Déchargement des données de la table `auteur`
@@ -68,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `civilite` (
   `civilite` varchar(5) NOT NULL,
   PRIMARY KEY (`id_civilite`),
   UNIQUE KEY `id_civilite` (`id_civilite`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ;
 
 --
 -- Déchargement des données de la table `civilite`
@@ -92,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `commande` (
   PRIMARY KEY (`id_commande`),
   UNIQUE KEY `id_commande` (`id_commande`),
   KEY `id_user` (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ;
 
 -- --------------------------------------------------------
 
@@ -106,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `editeur` (
   `editeur` varchar(144) NOT NULL,
   PRIMARY KEY (`id_editeur`),
   UNIQUE KEY `id_editeur` (`id_editeur`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ;
 
 --
 -- Déchargement des données de la table `editeur`
@@ -133,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `image` (
   `src_image` varchar(250) NOT NULL,
   PRIMARY KEY (`id_image`),
   UNIQUE KEY `id_image` (`id_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ;
 
 --
 -- Déchargement des données de la table `image`
@@ -175,17 +174,17 @@ CREATE TABLE IF NOT EXISTS `manga` (
   KEY `id_editeur` (`id_editeur`,`id_image`,`id_tome`),
   KEY `id_image` (`id_image`),
   KEY `id_tome` (`id_tome`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='table de recensement des mangas.';
+) ;
 
 --
 -- Déchargement des données de la table `manga`
 --
 
 INSERT INTO `manga` (`id_manga`, `name_manga`, `prix_manga`, `id_auteur`, `id_editeur`, `id_image`, `id_tome`) VALUES
-(1, 'Berserk', '6.50', 1, 1, 1, 1),
+(1, 'Berserk', '6.50', 1, 1, 1, 2),
 (2, 'bleach', '6.5', 2, 1, 2, 1),
 (3, 'Dragon Ball', '6.5', 3, 1, 3, 1),
-(4, 'Fullmetal Alchemist', '6.5', 4, 2, 4, 1),
+(4, 'Fullmetal Alchemist', '6.5', 4, 2, 4, 3),
 (5, 'Great Teacher Onizuka', '6.5', 5, 3, 5, 1),
 (6, 'Hunter x Hunter', '6.5', 6, 4, 6, 1),
 (7, 'Inuyashiki', '6.5', 7, 5, 7, 1),
@@ -193,8 +192,8 @@ INSERT INTO `manga` (`id_manga`, `name_manga`, `prix_manga`, `id_auteur`, `id_ed
 (9, 'My Hero Academia', '6.5', 9, 5, 9, 1),
 (10, 'Naruto', '6.5', 10, 4, 10, 1),
 (11, 'One Punch Man', '6.5', 11, 7, 11, 1),
-(12, 'One piece', '6.5', 12, 1, 12, 1),
-(13, 'Prince du Tennis', '6.5', 13, 4, 13, 1);
+(12, 'One piece', '6.5', 12, 1, 12, 3),
+(13, 'Prince du Tennis', '6.5', 13, 4, 13, 4);
 
 -- --------------------------------------------------------
 
@@ -210,14 +209,17 @@ CREATE TABLE IF NOT EXISTS `tome` (
   `date_tome` date NOT NULL,
   PRIMARY KEY (`id_tome`),
   UNIQUE KEY `id_tome` (`id_tome`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ;
 
 --
 -- Déchargement des données de la table `tome`
 --
 
 INSERT INTO `tome` (`id_tome`, `title_tome`, `num_tome`, `date_tome`) VALUES
-(1, '0', 0, '0000-01-01');
+(1, '0', 0, '0000-01-01'),
+(2, '', 1, '2018-03-14'),
+(3, '', 5, '2018-04-10'),
+(4, '', 7, '2018-04-03');
 
 -- --------------------------------------------------------
 
@@ -238,11 +240,11 @@ CREATE TABLE IF NOT EXISTS `user` (
   `ville_user` varchar(144) DEFAULT NULL,
   `adresse_user` varchar(240) DEFAULT NULL,
   `id_civilite` int(1) NOT NULL,
-  `admin` int (1)DEFAULT NULL,
+  `admin` int(1) DEFAULT NULL,
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `id_user` (`id_user`),
   KEY `id_civilite` (`id_civilite`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='table utilisateur';
+) ;
 
 --
 -- Déchargement des données de la table `user`
@@ -250,7 +252,10 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`id_user`, `login_user`, `mdp_user`, `email_user`, `firstname_user`, `lastname_user`, `tel_user`, `cp_user`, `ville_user`, `adresse_user`, `id_civilite`, `admin`) VALUES
 (4, 'lukihd', 'siam33140', 'lucas.eri@outlook.com', 'lucas', 'erisset', NULL, NULL, NULL, NULL, 1, 1),
-(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2, 1);
+(5, 'flouflou', 'floufloudu33', 'flouflou@yahoo.fr', 'florian', 'lafuente', NULL, NULL, NULL, NULL, 2, 1),
+(6, 'edfrtghjk;l:m', '', '', 'zdfrgthyuk', 'defrgthyjui', NULL, NULL, NULL, NULL, 2, NULL),
+(7, 'edfrtghjk;l:m', '', '', 'zdfrgthyuk', 'defrgthyjui', NULL, NULL, NULL, NULL, 2, NULL),
+(8, 'dcvfbgnh,j', '', '', 'vdfbgh,jv', 'efrgthby', NULL, NULL, NULL, NULL, 2, NULL);
 
 --
 -- Contraintes pour les tables déchargées
