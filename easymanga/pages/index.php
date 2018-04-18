@@ -30,13 +30,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100 img-fluid" src="http://lorempicsum.com/futurama/1920/825/4" alt="First slide">
+                            <img class="d-block w-100 img-fluid" src="../images/izuku__bouku_no_hero_academia__minimalist_by_jmsedwrd-da3wz96.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="http://lorempicsum.com/simpsons/1920/825/4" alt="Second slide">
+                            <img class="d-block w-100" src="../images/kIXcxC.png" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="http://lorempicsum.com/nemo/1920/825/4" alt="Third slide">
+                            <img class="d-block w-100" src="../images/saitama__one_punch_man__by_klikster-d9g4pxa.png" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
