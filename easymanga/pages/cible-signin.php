@@ -70,7 +70,7 @@ $email_valide = false;
                         // On vérifie que c'est le bon mdp
                         if ($mdp_utilisateur[$i] == $pswd) {
                             
-                            $test_nom = $bdd->prepare("SELECT firstname_user FROM user");
+                            $test_nom = $bdd->prepare("SELECT login_user FROM user");
                             $test_nom->execute();  
                             $nom = array();
                             $j = 0;

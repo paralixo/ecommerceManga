@@ -57,6 +57,7 @@
 
             <div id="selectionSorties" class="row justify-content-center align-items-center">
                 <i class="material-icons" id="prev">keyboard_arrow_left</i>
+<!--                affiché par défaut-->
                 <div>
                     <div class="bloc_sorties">
                         <img src="../images/mha4.jpg" alt="image couverture tome 4O naruto" class="img-fluid" />
@@ -78,7 +79,7 @@
                 <i class="material-icons" id="next">keyboard_arrow_right</i>   
             </div>
 
-            <a href="#" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
+            <a href="manga.php" alt="découvrez tout nos mangas" class="btn-2">Découvrez tout nos mangas</a>
         </div>
         
         
@@ -120,8 +121,8 @@
                 }
             })
             
-            // génération par défaut
-       //     req(index_page);
+
+            req(index_page);
         </script>
         
         

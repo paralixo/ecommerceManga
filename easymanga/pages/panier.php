@@ -60,7 +60,7 @@
                             <hr class="d-block d-md-none"/>
                             <span>'; echo count($_SESSION['panier']); echo' article(s)<br/>Total : '; echo $prix_total; echo '€<br/></span>
                             <hr/>
-                            <button class="btn btn-primary" onclick="alert("Votre achat a bien été effectué")">Valider votre achat</button>
+                            <button class="btn btn-primary" onclick="alert("Votre achat a bien été effectué")" >Valider votre achat</button>
                         </div>
                     </div>
 
